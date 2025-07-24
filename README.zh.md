@@ -3,7 +3,7 @@
 
 # eGPS 2.1
 
-eGPS 2.1 的源代码
+eGPS 2.1 源代码 - 先进的生物信息学分析平台
 
 ## 目录
 
@@ -13,20 +13,26 @@ eGPS 2.1 的源代码
 - [环境要求](#环境要求)
 - [安装指南](#安装指南)
 - [使用说明](#使用说明)
+- [模块介绍](#模块介绍)
 - [贡献指南](#贡献指南)
 - [许可证](#许可证)
 - [致谢](#致谢)
 
 ## 关于项目
 
-eGPS（增强型GPS）2.1 是一种先进的GPS系统，相比传统GPS系统提供了增强的定位能力和功能。本仓库包含了eGPS 2.1系统的源代码。
+eGPS（增强型GPS）2.1 是一个先进的生物信息学分析平台，提供各种进化分析、序列处理、系统发育树构建和可视化的工具。与传统的GPS系统不同，eGPS 2.1 专注于生物数据分析，为进化生物学和基因组学领域的研究人员提供了一整套分析模块。
+
+本仓库包含了eGPS 2.1系统的源代码，该系统使用Java构建，需要Java 21或更高版本才能运行。
 
 ## 功能特性
 
-- 增强的定位精度
-- 改进的信号处理能力
-- 先进的算法实现更优的位置追踪
-- 模块化设计便于集成
+- 进化分析工具
+- 序列处理和操作
+- 系统发育树构建和可视化
+- 数据可视化模块（热图、弦图、维恩图等）
+- 模块化设计，拥有60多个专业分析模块
+- 跨平台兼容性
+- 可扩展架构
 
 ## 快速开始
 
@@ -35,8 +41,8 @@ eGPS（增强型GPS）2.1 是一种先进的GPS系统，相比传统GPS系统提
 ### 环境要求
 
 使用本项目前需要安装的软件、库或工具：
-- Java开发工具包 (JDK)
-- Apache Maven
+- Java开发工具包 (JDK) 21或更高版本
+- Apache Maven 3.6或更高版本
 - Git
 
 ### 安装指南
@@ -56,11 +62,23 @@ eGPS（增强型GPS）2.1 是一种先进的GPS系统，相比传统GPS系统提
 
 ## 使用说明
 
-使用项目的说明和示例：
-
-```java
-// 示例代码放在这里
+构建项目后，可以通过以下命令运行主应用程序：
+```bash
+java -jar target/eGPS2.1.jar
 ```
+
+各个模块的详细使用说明可以在其各自的文档中找到。
+
+## 模块介绍
+
+eGPS 2.1由60多个专门用于各种生物信息学分析任务的模块组成：
+
+- **进化分析**: evoldist, evolknow, evoltre, evoltrepipline
+- **序列处理**: fastadumper, fastatools, multiseq, webmsaoperator
+- **系统发育树工具**: treebuilder, evolview, treenodecoll, treetanglegram
+- **数据可视化**: heatmap, chorddiagram, vennplot, skeletonscatter, sankeyplot
+- **基因组分析**: genome, gff3opr, bedmerger
+- **数据处理**: tablecuration, tableleftjoin, stringsetoperator
 
 ## 贡献指南
 

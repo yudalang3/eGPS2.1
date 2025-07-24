@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title></title>
+</head>
+<body>
+
+	<blockquote>
+		<h3>解决的问题</h3>
+		<p>绘制MA Plot。</p>
+
+		<h3>快速开始</h3>
+		<p>所有操作都比较直观、易懂。请按照图形用户界面的指示进行操作。</p>
+		<p>详见：https://www.yuque.com/u21499046/egpsdoc/vkuv67g45vy0gyf5</p>
+
+		<ol>
+			<li>点击示例按钮查看输入数据。</li>
+			<li>点击执行按钮查看结果。</li>
+		</ol>
+
+		<h3>数据变换的细节</h3>
+		<p>设x和y分别代表两组条件下观察到的样本的均值。Original Data代表直接用x和y绘制散点图。</p>
+		<p>当用户选择“Do MA plot”选项之后，四个选项数据变换的细节为：</p>
+		<ol>
+			<li>“Direct”: y_new = y - x; x_new = (x + y) / 2</li>
+			<li>“Log(x)”: y_new = log2(y) - log2(x); x_new = (log2(x) + log2(y)) / 2 </li>
+			<li>“Log(x+1)”: y_new = log2(y + 1) - log2(x + 1); x_new = ( log2(x + 1) + log2(y + 1) ) / 2</li>
+			<li>“Log(x + |min(x)| + 1)”: y_new = log2(y + |min(y)| + 1) - log2(x + |min(x)| + 1); <br> x_new = log2(x + |min(x)| + 1) + log2(y + |min(y)| + 1) / 2</li>
+		</ol>
+		
+		<p>注意：|min(x)|的意思是，所有x坐标的最小值再取对数。</p>
+
+
+	</blockquote>
+</body>
+</html>

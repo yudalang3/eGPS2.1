@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>low volume text editor</title>
+</head>
+
+<body>
+	<blockquote>
+		<h1>突变展示器</h1>
+
+		<h3>解决的问题</h3>
+		<p>呈现一些序列的突变，关注多态性的情况。</p>
+
+		<h3>快速开始</h3>
+		<p>所有操作都比较直观、易懂。请按照图形用户界面的指示进行操作。</p>
+		<p>详见：https://www.yuque.com/u21499046/egpsdoc/lf5qz1swogudompd</p>
+
+		<ol>
+			<li>点击示例按钮查看输入数据。</li>
+			<li>点击执行按钮查看结果。</li>
+		</ol>
+
+		<p>除了上述调用eGPS中的VOICM数据输入与运行机制的GUI运行方式外，本模块还能通过命令行来运行：</p>
+
+		<p>
+			具体使用方式示例（$号为终端提示符）：<br> java -cp $eGPS_lib
+			edu.sinh.beauty.unisoft.module.mutationpre.CLI –input input.txt –w
+			800 –h 600 –out out.pdf
+		</p>
+
+		<p>根据eGPS命令行的API设计标准，启动类名称为CLI，前面的包路径为模块所在的路径。</p>
+
+		<h3>基本介绍</h3>
+
+		<p>该模块的主要功能为突变的可视化。包含下面的内容： 1. 人的基因/病毒基因组的坐标系 2.
+			人的基因/病毒基因组中的区域（例如基因结构，本模块主要绘制的对象） 3. 区域到突变的连接线 4. 人的基因/病毒基因组上的突变</p>
+
+		<p>这里的绘制对象是一定长度的片段，例如病毒基因组或者人类的基因，他们的长度相近。</p>
+
+		<strong>注意：</strong>
+		<ol>
+			<li>基因结构位置无限制，若出现嵌套则后面的会覆盖前面的，可设置颜色透明度。</li>
+			<li>突变字符通过单击、拖拽实现突变信息显示位置的调整。</li>
+			<li>可以通过工具栏保存按钮保存图片和相关参数设置文件。也可导入参数配置文件进行绘图</li>
+		</ol>
+
+
+		<h3>参数说明</h3>
+
+		<p>通用的参数说明请见VOICM机制的说明文档（Help -> History -> VOICM）</p>
+
+		<h4>1.坐标轴设置</h4>
+		（1）$axis:title=The Defining SNPs of Two VOC (设置标题内容) <br>
+		（2）$axis:titleFont=Arial,0,18 （设置标题字体）<br>
+		（3）$axis:titleColor=0,0,0,255 （设置标题颜色）<br>
+		（4）$axis:labelFont=Arial,0,12 （设置刻度标签的字体）<br>
+		（5）$axis:axisLineWidth=1.2 （设置坐标轴线和刻度线的粗细）<br>
+		（6）$axis:tickSize=8 （设置刻度标签的数量）<br>
+
+		<h4>2.基因组区域设置</h4>
+		（1）$region:axisToRegionVerticalGap=40 （设置该区域到坐标轴的垂直距离）<br>
+		（2）$region:showMutationVerticalLine=true （设置是否显示垂直的突变标线）<br>
+		（3）$region:regionLabelFont=Arial,0,12 （设置每个区域标签字体）<br>
+		（4）$region:regionLabelColor=120,0,0,255 （设置每个区域标签的颜色）<br>
+		（5）$region:roundRectangularCurvature=15 （设置圆角矩形的弯曲度，为0时显示矩形）<br>
+		（6）$region:hasRegionBorder=true （设置是否绘制边框）<br>
+		（7）$region:regionBorderColor=0,0,0,255 （设置边框的颜色）<br>
+		（8）$region:regionBorderLineWidth=0.2 （设置边框的线的粗细） <br>
+		（9）$region:height=40（设置矩形的高度）
+
+		<h4>3.连接线设置</h4>
+		1）$connectingLine:connectingLineWidth=1 （设置连接线的粗细）<br>
+		（2）$connectingLine:connectingLineColor=110,0,0,255 （设置连接线的颜色）<br>
+		（3）$connectingLine:curvature=0.6 （设置连接线的弯曲度，弯曲度体现为贝塞尔曲线中的曲率）<br>
+		（4）$connectingLine:verticalSpacing=200 （设置该区域的垂直高度）<br>
+		（5）$connectingLine:special （特异性的设置某些曲线的宽度和颜色，使用表格样数据）<br>
+		输入分成四列，第一列为开始此特殊设置的位置，第二列为结束此特殊设置的位置，第三列为曲线粗细，第四列为曲线颜色。
+
+		<h4>4.突变信息设置</h4>
+		（1）$mutation:rotationDegree=0 （设置突变标签的显示角度）<br>
+		（2）$mutation:font=Arial,0,12 （设置突变标签的字体）<br> （3）$totalLength=1273
+		（设置显示的基因组区间全长）<br> （4）$regionInfo （基因结构设置）<br>
+		为表格样信息，共包括四列，第一列是基因的名称，第二列是基因开始的位置，第三列是基因结束的位置，第四列绘图显示的颜色。
+
+		<p>示例：</p>
+		<table border="1" align="center">
+			<tr>
+				<td># name startPosition endPosition color<br> NTD 13 304
+					0,0,100,50<br> RBD 319 541 100,0,0,50<br> S1/S2 cleavage
+					region 543 1208 0,100,0,50<br> CoV_S2_C 1233 1273 0,234,234,55
+				</td>
+			</tr>
+		</table>
+
+		（5）$mutation:showPositionCoordinate=true (是否显示Coordinate 这一行的信息)<br>
+		（6）$mutation:position:rotationDegree=90 （设置Coordinate坐标位置字符串的显示角度）<br>
+		（7）$mutation:showConsensusAnnotation=true （是否标记所有variant共有的突变）<br>
+		（8）$mutationInfo （突变信息设置）<br> 该部分有三种设置方式：直接输入，输入突变信息文件和输入比对文件。
+
+		<h3>主体数据——突变信息的参数说明</h3>
+		<strong><em>1. 直接输入突变信息</em></strong>
+		<p>可以输入多个Variant的信息，最终显示的位点为所有Variant的突变的并集，只显示信息。每行Variant说明后为具体的突变信息，包括三列，第一列是突变的位置，第二列是标记的颜色，第三列是显示的注释信息。</p>
+
+		<p>示例：</p>
+		<table border="1" align="center">
+			<tr>
+				<td>variant=Delta VOC <br> # position color annotation <br>
+					69 254,0,0,255 HV69- <br> 144 254,0,0,255 Y144- <br> 501
+					0,0,0,255 N501Y <br> 570 0,0,0,255 A570D <br> 681
+					0,254,0,255 P681H <br> 716 0,0,0,255 T716I <br> 982
+					0,0,0,255 S982A <br> 1118 0,0,0,255 D1118H <br>
+					variant=Alpha VOC <br> # position color annotation <br>
+					19 0,0,0,255 T19R <br> 452 0,254,0,255 L452R <br> 478
+					0,0,0,255 T478K <br> 681 0,254,0,255 P681R <br> 950
+					0,0,0,255 D950N <br>
+
+				</td>
+			</tr>
+		</table>
+
+		<strong><em>2. 输入突变信息文件</em></strong>
+
+		<p>
+			mutationFile=/mutationInfoFile.txt<br>
+			mutationInfoFile格式为一行一个变体，每行的格式为“变体名:突变1, 突变2…”
+
+		</p>
+
+		<p>示例：</p>
+		<table border="1" align="center">
+			<tr>
+				<td>$mutationInfo<br>
+					mutationsFile=config/bioData/genomicMuts/variant_of_cumulatedMuts_forVisulize.txt
+
+
+				</td>
+			</tr>
+		</table>
+
+		<p>用户可自行去软件安装目录查看该文件。</p>
+
+		<strong><em>3. 输入联配文件</em></strong>
+
+		<p>
+			alignmentFile=/alignmentFile.fas<br> alignmentFile格式为fasta格式。
+
+		</p>
+
+		<p>示例：</p>
+		<table border="1" align="center">
+			<tr>
+				<td>$mutationInfo<br>
+					alignmentFile=config/bioData/genomicMuts/example.longAlignedFasta_2.fas
+
+				</td>
+			</tr>
+		</table>
+
+		<p>用户可自行去软件安装目录查看该文件。</p>
+
+	</blockquote>
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+PathwayIlluminator GUI SOFTWARE LICENSE TERMS
+
+PathwayIlluminator GUI DESKTOP APPLICATION
+
+These license terms are an agreement between the developers of software  and you. Please read them. They apply to the software named above. By copying, downloading, or using the software, you accept these terms. If you do not accept them, do not use the software. Instead, please delete and uninstall the software from your computer.
+
+SCOPE OF LICENSE. This agreement gives you rights to download, copy, and use the PathwayIlluminator GUI software for free. The developers reserve  all other rights. You may not
+1) work around any technical limitations in the software;
+2) reverse engineer, decompile or disassemble the software;
+3) use the software in any way that is against the law;
+4) rent or lease the software; or
+5) use the software for commercial software hosting services.
+
+BACKUP COPY. You may make backup copies as many as you want.
+
+REDISTRIBUTION. 	You can copy the software, together with this license, to anyone who you know or may not know.
+
+LIMITATION ON AND EXCLUSION OF DAMAGES. The developers have no responsibilities for any kinds of damages on your properties because of copying, downloading, and using the PathwayIlluminator GUI software.
+
+UPGRADE. You can visit the official site for the latest version.
+

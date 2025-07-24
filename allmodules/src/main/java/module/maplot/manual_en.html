@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>low volume text editor</title>
+</head>
+<body>
+
+	<blockquote>
+		<h3>Task to resolve</h3>
+		<p>Quick draw the interactive MA plot.</p>
+
+		<h3>Quick start</h3>
+		<p>Any actions are straightforward. Please follow the GUI instructions.</p>
+
+
+		<ol>
+			<li>Click the Example button to see the input data.</li>
+			<li>Click the Execute button to see the results.</li>
+		</ol>
+		
+				<h3>The details of data transformation</h3>
+		<p>Let x and y are respectively the mean of the two groups being compared. "Original Data" represent painting the scatter plot directly with x and y values。</p>
+		<p>After selecting the “Do MA plot” options, the computation details are following:</p>
+		<ol>
+			<li>“Direct”: y_new = y - x; x_new = (x + y) / 2</li>
+			<li>“Log(x)”: y_new = log2(y) - log2(x); x_new = (log2(x) + log2(y)) / 2 </li>
+			<li>“Log(x+1)”: y_new = log2(y + 1) - log2(x + 1); x_new = ( log2(x + 1) + log2(y + 1) ) / 2</li>
+			<li>“Log(x + |min(x)| + 1)”: y_new = log2(y + |min(y)| + 1) - log2(x + |min(x)| + 1); <br> x_new = log2(x + |min(x)| + 1) + log2(y + |min(y)| + 1) / 2</li>
+		</ol>
+		
+		<p>Note: |min(x)| means get the minimal value of all x first, than apply the abs() function.</p>
+
+	</blockquote>
+</body>
+</html>

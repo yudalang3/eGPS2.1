@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title></title>
+</head>
+<body>
+
+	<blockquote>
+		<h3>解决的问题</h3>
+		<p>方便且交互式地绘制热图</p>
+
+		<h3>快速开始</h3>
+		<p>所有操作都比较直观、易懂。请按照图形用户界面的指示进行操作。</p>
+		<p>详见：https://www.yuque.com/u21499046/egpsdoc/wg462ui2hr9qlkpw。</p>
+
+		<ol>
+			<li>点击示例按钮查看输入数据。</li>
+			<li>点击执行按钮查看结果。</li>
+		</ol>
+
+		<h3>热图的特色</h3>
+		<p>本模块有如下的特色：</p>
+		<ul>
+			<li>要能够进行数据的变换，包括： 1）转置；2）各种归一化变换</li>
+			<li>支持大型矩阵的可视化</li>
+			<li>支持行或者列的添加标签</li>
+			<li>可以层次聚类，Kmeans聚类等</li>
+			<li>可导入进化树，与热图并存</li>
+			<li>支持分块，添加gap方便</li>
+			<li>高度交互式，可拖拽排列图形元素</li>
+			<li>好用的颜色配置器来设置配色方案</li>
+			<li>同时还可以脚本化运行，通过类似命令行的方式来运行</li>
+
+		</ul>
+
+		<h3>热图的基本知识</h3>
+
+		<p>
+			对于一个数据矩阵M =
+			{x_ij}，令min为矩阵M的最小值，max为M的最大值。然后定义一个渐变的颜色条，例如从白色到红色。那么min对应的颜色是白色，max对应的是红色，其它的值x_ij按照线性对应关系显示相应的颜色。这就是热图，在原理上仅此而已！<br>
+			所以，对于一个热图，有些操作是绝对没有什么意义的：例如
+		</p>
+
+		<ol>
+			<li>把热图中的一块拖出来。</li>
+			<li>把热图中的一块颜色我们人为改变。</li>
+		</ol>
+		<p>用户可以自定义热图的颜色条，非常精细的颜色关系对应还未实现。例如假设待可视化的数据最小值为0最大值为11，用户需要定制[0,1)为白色，[1,2)为红色[2,+~正无穷]为深红色。</p>
+
+		<p>热图默认的界面显示参数为：会显示每个格子的边界(border)，行名，列名与图例(legend)。</p>
+
+		<h3>左侧参数栏说明</h3>
+
+		<h4>便捷操作 Convenient Operation</h4>
+		从上到下依此为：
+		<ol>
+			<li>自适应，当改变窗口大小的时候可以按此按钮自动适应窗口</li>
+			<li>重新把所有参数设置为默认状态</li>
+			<li>矩阵的转置操作</li>
+			<li>存储当前参数与数据，类似于游戏中的存档</li>
+			<li>恢复，存档后可以直接恢复。</li>
+			<li>导入进化树文件，在左侧绘制进化树，注意进化树的OUT名字和数量得和所有行名保持一致。</li>
+		</ol>
+
+		<h4>格子属性 Cell Properties</h4>
+		可以调节每个格子的配色与格子的形状。所有操作非常直观，用户可自己探索。<br>
+		热图最重要的配色方案可以在这里进行设置。我们预置了一些配色方案，同时我们支持用户自己进行配色。选择costumed选项可以自己配置颜色，详细的使用请见下文。
+		<h4>数据变换 Data Transformation</h4>
+
+		Data Transformation: 是各种对行的数据变换，若需要对列进行变换，请先转置。
+
+		<ol>
+			<li>第一个是没有数据变换，直接用原始数据进行可视化；</li>
+			<li>Z-score是标准的正态化变换；</li>
+			<li>Min-Max scaling是(x_ij –min) / (max - min) 变换；</li>
+			<li>还有常规的log变换</li>
+			<li>Cox-Box变换，对于此变换我们现在实现的策略是：当该行数据全部大于0时，lambda依次取值{-2,-1.5,-1,-0.5,0,0.5,1,1.5,2}，然后用Kolmogorov
+				Smirnov Test检验数据的正态性，取最符合正态性的lambda值，最终给出平均值。</li>
+		</ol>
+
+		<h4>层次聚类 Hierarchical Clustering</h4>
+
+		Hierarchical Clustering：是针对层次聚类的选项。
+
+		这里总共有三大类参数，第一个是层次聚类，Element中的组件值的改动会触发聚类操作。 当选择任意一个非 ”No
+		cluster”选项时，后面的参数都会启用。 <br>
+		用户可以选择对行聚类，对列聚类或者都聚类。层次聚类有两个重要参数，包括距离矩阵的计算方法与Linkage方法。
+
+		<h4>K-Means++聚类 K-Means++ Clustering</h4>
+		K-Means Clustering: 是利用K-Means方法进行聚类。 前三个按钮分别表示对那些对象进行聚类。 Distance
+		meteric 、Number of clusters 和 Maximun iterations 三个参数是K-Means聚类常用的参数。
+
+		当存在层次聚类的时候，点击Re arrange order 处的set按钮可以重新根据聚类信息来排列。
+
+		<h4>展示选项 Display Options</h4>
+		Display 是针对界面效果的选项：<br> <br> 首先是 Data values ,
+		该选项表示是否显示每个热图格子的数值。Value status 中的组件值的改变会触发热图的更改。Number of
+		decimals表示显示的小数位数；Partial bounds factor针对Partial Ori.与Partial Pre.
+		选项而设。当选择此选项时：minValue<= x <= minValue + factor and maxValue - factor
+		<= x <= maxValue 会被显示出来。这个选项主要是针对人们往往对那些极端的值很有兴趣。<br> <br>
+		第二个是Border选项。点击Check box组件会触发更新操作。用户可以点击Col按钮更改颜色。<br> <br>
+		第三个是Legend选项。点击Check box组件会触发更新操作。Legend的大小会根据所设置的长和宽进行绘制。<br> <br>
+		第四个和第五个是对行名与列名的操作，同样点击Check box组件会触发更新操作。这些操作会根据旋转角度、字体与颜色来进行。
+
+		<h4>热图配色器</h4>
+
+		当点击display options 参数栏中的Cell -> Color scheme -> costumed
+		参数后可以掉出热图模块中的颜色配置器。<br> <br> 最顶层是渐变颜色的预览，当配置完颜色后可以直接在这里预览。<br>
+		<br>
+
+		之后是一个颜色分配器，用户可以新增或者删除颜色坐标，每个颜色坐标都可以重新设置颜色。特别的，我们实现了一个全屏幕的取色器，可以方便用户从其它地方去取色。<br>
+		<br> 再下面是一个默认的取色器，可以从样本、HSV、HSL、RGB、CMYK子栏目中获取颜色。<br> <br>
+		取完的颜色会在这里显示预览。<br> <br> 最后是相应的按钮，Screen color
+		picker可以换起全局的颜色选择器，之后是一个颜色的RGB值。点击OK按钮会在热图上应用当前的渐变色。
+
+		<h4>布局选项 Layout Options</h4>
+		最后的Layout选项栏，我们当前实现了rectangular的布局。<br> <br>
+		首先是对聚类形成的树的控件位置的分配。因为我们的热图本身是高度交互式的，所以这里只是显示了当前分配的一些结果。<br> <br>
+		设置单个gap的大小，当设置了gap时可显示效果。<br> <br> 重新设置格子大小。<br> <br>
+		新增环形布局，可将热图进行环化。
+
+		<h3>交互式设计</h3>
+		<p>当鼠标单击聚类树的节点时，可以选择相应的cluster。右键点击时会弹出如下菜单:</p>
+		<ol>
+			<li>New annotation，新增注释信息，操作左边的树会新增行注释；操作上面的树会新增列注释。</li>
+			<li>Output cluster info. 第二个是输出cluster信息，此信息会以行名或者列名的形式输出为单个文件。
+			</li>
+			<li>后续的选项含义同名称，这里不再赘述。</li>
+		</ol>
+		<p>当鼠标单击图中注释标签时，标签会显示选中状态，此时按“Delete”键可以删除单个注释。</p>
+		<p>当鼠标单击格子时，会显示激活状态。拖拽格子，激活选择状态时，可添加gaps。</p>
+		<p>当鼠标拖拽批量选择行名或者列名时，也可以设置注释标签。不同的是，它多了可以加载到已有标签的功能。</p>
+
+	</blockquote>
+</body>
+</html>

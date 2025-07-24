@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>low volume text editor</title>
+</head>
+<body>
+
+	<blockquote>
+		<h3>Task to resolve</h3>
+		<p>A convenient blast software GUI operation module.</p>
+
+		<h3>Quick start</h3>
+		<p>Any actions are straightforward. Please follow the GUI
+			instructions.</p>
+		<p>Note: user need to download the blast software first, and
+			provides the bin directory.</p>
+
+		<ol>
+			<li>Input the necessary parameters on the graphical interface. For the parameters of the path class, the user can quickly complete it by dragging the mouse or copying the path.</li>
+			<li>Click the Execute button to see the results.</li>
+		</ol>
+
+		<h3>Caution</h3>
+		<ol>
+			<li>To avoid any issues, all file paths should be in English.</li>
+		<li>You may notice that in BLAST XML files, sometimes BLAST replaces your real sequence IDs with its own generated IDs. For example, the query ID becomes 'QUERY_1', 'QUERY_2', and so on. And hit IDs sometimes become 'GNL|BL_ORD_ID| 1', 'GNL|BL_ORD_ID| 2', and so on. In these cases, BLAST will gather the real sequence IDs and their descriptions together.<br>So do not be alarmed if you see some strange characters.</li>
+		</ol>
+		
+		<h3>Important Parameter Q&A</h3>
+<p>The output format of BLAST can be controlled by outfmt, with 18 formats available. The commonly used outfmt 6 has a default output of: qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore. Additionally, formats 6, 7, 10, and 17 allow for adjustments in the output content.</p>
+<p>The information corresponding to these 12 columns is as follows:</p>
+<ol>
+  <li>Query id: Identifier for the query sequence</li>
+  <li>Subject id: Identifier for the aligned target sequence</li>
+  <li>% identity: The percentage of sequence alignment identity</li>
+  <li>Alignment length: The length of the alignment region that meets the criteria</li>
+  <li>Mismatches: The number of mismatches in the alignment region</li>
+  <li>Gap openings: The number of gaps in the alignment region</li>
+  <li>Q. start: The starting position of the alignment region on the query sequence (Query id)</li>
+  <li>Q. end: The ending position of the alignment region on the query sequence (Query id)</li>
+  <li>S. start: The starting position of the alignment region on the target sequence (Subject id)</li>
+  <li>S. end: The ending position of the alignment region on the target sequence (Subject id)</li>
+  <li>E-value: The expected value of the alignment results, which indicates how often you would expect to see a match of equal or higher score if the sequences were shuffled at random. The lower the value, the more conserved the function; a higher E-value suggests that the high score is due to GC content or repetitive sequences. This is a very meaningful parameter for judging homology.</li>
+  <li>Bit score: The bit score value of the alignment results</li>
+</ol>
+<p>
+  -outfmt supports the generation of SAM format.
+  <br>
+  Alignment view options:
+</p>
+<ul>
+  <li>0 = Pairwise,</li>
+  <li>1 = Query-anchored showing identities,</li>
+  <li>2 = Query-anchored no identities,</li>
+  <li>3 = Flat query-anchored showing identities,</li>
+  <li>4 = Flat query-anchored no identities,</li>
+  <li>5 = BLAST XML,</li>
+  <li>6 = Tabular,</li>
+  <li>7 = Tabular with comment lines,</li>
+  <li>8 = Seqalign (Text ASN.1),</li>
+  <li>9 = Seqalign (Binary ASN.1),</li>
+  <li>10 = Comma-separated values,</li>
+  <li>11 = BLAST archive (ASN.1),</li>
+  <li>12 = Seqalign (JSON),</li>
+  <li>13 = Multiple-file BLAST JSON,</li>
+  <li>14 = Multiple-file BLAST XML2,</li>
+  <li>15 = Single-file BLAST JSON,</li>
+  <li>16 = Single-file BLAST XML2,</li>
+  <li>17 = Sequence Alignment/Map (SAM),</li>
+  <li>18 = Organism Report</li>
+</ul>
+
+	</blockquote>
+</body>
+</html>

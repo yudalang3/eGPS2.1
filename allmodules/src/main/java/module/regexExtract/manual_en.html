@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>low volume text editor</title>
+</head>
+<body>
+
+	<blockquote>
+		<h3>Task to resolve</h3>
+		<p>Given a text file, each line has a fixed format string. The
+			target information is extracted from each line of string.</p>
+
+		<h3>Quick start</h3>
+		<p>Any actions are straightforward. Please follow the GUI
+			instructions.</p>
+
+		<h4>Application Example</h4>
+
+		<p>By running the example file of this module, we have the
+			following content:</p>
+
+		<pre>Saccharomyces cerevisiae - Baker's yeast (酿酒酵母)
+Caenorhabditis elegans - Nematode (秀丽隐杆线虫)
+Drosophila melanogaster - Fruit fly (黑腹果蝇)
+</pre>
+		<p>我们的想得到的结果是生成一个以Tab键分隔的文本内容如下：</p>
+		<pre>Saccharomyces cerevisiae	Baker's yeast	酿酒酵母
+Caenorhabditis elegans	Nematode	秀丽隐杆线虫
+Drosophila melanogaster	Fruit fly	黑腹果蝇
+</pre>
+
+		<p>To achieve this requirement, regular expressions would be
+			needed if we wrote the script ourselves. This would involve using an
+			IDE to write the script or directly in a terminal window, and the
+			completed script is typically used only once. Such operations require
+			a shift in thinking for researchers and are not very convenient to
+			use.</p>
+		<p>Therefore, this module was developed, and using it only
+			requires three steps.</p>
+		<ol>
+			<li>Generate a regular expression based on the string extraction
+				requirements from the web-based AI model. For example, the regular
+				expression to achieve this functionality is
+				(.*?)\\s*-\\s*(.*?)\\s*\\((.*?)\\)</li>
+			<li>Enter the remaining necessary parameters, such as the input
+				and output file paths</li>
+			<li>The third step is to run it, either through the command line
+				or by clicking the run button on the graphical interface</li>
+		</ol>
+		<p>Tip: The input and output file paths can be expanded or you can
+			directly paste the string address. You can create bookmarks using the
+			VOICM's history function for reuse in future similar requirements.</p>
+
+
+		<h3>Command Line Usage</h3>
+		<p>Assuming that "$libPath" is the directory where the JAVA
+			library files are located, the following command can be used:</p>
+		<p>java -cp "$libPath"
+            edu.sinh.beauty.unisoft.module.treenodecoll.CLI configFile</p>
+		<p>Since VOICM has the ability to run script records, the command
+			line is actually more cumbersome to use.</p>
+	</blockquote>
+</body>
+</html>

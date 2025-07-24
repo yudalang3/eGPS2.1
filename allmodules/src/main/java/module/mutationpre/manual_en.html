@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>low volume text editor</title>
+</head>
+<body>
+
+	<blockquote>
+		<h3>Task to resolve</h3>
+		<p>Present some sequence mutations, focusing on the polymorphism
+			not monomorphism.</p>
+
+		<h3>Quick start</h3>
+		<p>Any actions are straightforward. Please follow the GUI
+			instructions.</p>
+
+
+		<ol>
+			<li>Click the Example button to see the input data.</li>
+			<li>Click the Execute button to see the results.</li>
+		</ol>
+
+		<p>In addition to the above GUI operation mode that calls the
+			VOICM data input and operation mechanism in eGPS, this module can
+			also be run from the command line:</p>
+
+		<p>
+			An example of how to use it ($is a terminal prompt) :<br> java
+			-cp $eGPS_lib edu.sinh.beauty.unisoft.module.mutationpre.CLI –input input.txt
+			–w 800 –h 600 –out out.pdf
+		</p>
+
+		<p>According to the eGPS command-line API design standard, the
+			launch class name is CLI, and the preceding package path is the path
+			where the module is located.</p>
+
+		<h3>Introduce</h3>
+
+		<p>This module is designed for mutation visualization and it
+			contains following elements: 1. The coordinate system of the genome
+			2. Regions in the genome (e.g., gene structure) 3. Region-to-mutation
+			connecting line 4. Mutations</p>
+
+		<p>The objects mapped here are segments of a certain length, such
+			as a viral genome or a human gene, that are of similar length.</p>
+
+		<strong>Note：</strong>
+		<ol>
+			<li>There is no limit to the position of the genomic regions. If
+				there is nesting, the genomic region in the following line will
+				cover the one in preceding line. Users can show the nested genomic
+				regions by setting the transparency.</li>
+			<li>The position of mutation characters can be adjusted by
+				clicking and dragging. You can save the picture and related
+				parameter settings file by the Click the “Save” button on the
+				toolbar.</li>
+		</ol>
+
+
+		<h3>Parameter Description</h3>
+
+		<p>For general parameter explanations, please refer to the
+			documentation for the VOICM mechanism (Help -> History -> VOICM).</p>
+
+		<h4>1.Axis settings</h4>
+		（1）$axis:title=The Defining SNPs of Two VOC (Set the title content) <br>
+		（2）$axis:titleFont=Arial,0,18 （Set the title font）<br>
+		（3）$axis:titleColor=0,0,0,255 （Set the title color）<br>
+		（4）$axis:labelFont=Arial,0,12 （Set the tick font）<br>
+		（5）$axis:axisLineWidth=1.2 （Set the axis thickness）<br>
+		（6）$axis:tickSize=8 （Set the tick number）<br>
+
+		<h4>2.Genomic region settings</h4>
+		（1）$region:axisToRegionVerticalGap=40 （Set the vertical distance from genomic region to the coordinate axis）<br>
+		（2）$region:showMutationVerticalLine=true （Set whether the vertical lines for mutations are displayed）<br>
+		（3）$region:regionLabelFont=Arial,0,12 （Set the region label font）<br>
+		（4）$region:regionLabelColor=120,0,0,255 （Set the region label color）<br>
+		（5）$region:roundRectangularCurvature=15 （Sets the curvature of the rounded rectangle. When the value is 0, a rectangle will be displayed.）<br>
+		（6）$region:hasRegionBorder=true （Sets whether the border of regions is drawn）<br>
+		（7）$region:regionBorderColor=0,0,0,255 （Set the border color）<br>
+		（8）$region:regionBorderLineWidth=0.2 （Set the border line thickness） <br>
+		（9）$region:height=40（Set the height of the region rectangle）
+
+		<h4>3.Connecting line settings</h4>
+		1）$connectingLine:connectingLineWidth=1 （Set the line thickness of the connecting line）<br>
+		（2）$connectingLine:connectingLineColor=110,0,0,255 （Set the color of the connecting line）<br>
+		（3）$connectingLine:curvature=0.6 （Sets the curvature of the connecting line, which is reflected in the curvature of the Bézier curve）<br>
+		（4）$connectingLine:verticalSpacing=200 （Sets the vertical height of the area）<br>
+		（5）$connectingLine:special （Specifically set the thickness and color of certain curves, using table-like data）<br>
+		The connecting line special setting consists of four columns. The first column is the position where this special setting begins. The second column is the position where this special setting ends. The third column is the curve thickness. The fourth column is the curve color. 
+
+		<h4>4.Mutation information settings</h4>
+		（1）$mutation:rotationDegree=0 （Set the mutation label rotation angle）<br>
+		（2）$mutation:font=Arial,0,12 （Set the mutation label font）<br> （3）$totalLength=1273
+		（Set the genomic whole length）<br> （4）$regionInfo （Set genomic regions）<br>
+		The mutation information is table-like data and consists of four columns. The first column is the name of the gene. The second column is the start position of the gene. The third column is the end position of the gene. The fourth column is the drawing color of the gene. 
+
+		<p>An example：</p>
+		<table border="1" align="center">
+			<tr>
+				<td># name startPosition endPosition color<br> NTD 13 304
+					0,0,100,50<br> RBD 319 541 100,0,0,50<br> S1/S2 cleavage
+					region 543 1208 0,100,0,50<br> CoV_S2_C 1233 1273 0,234,234,55
+				</td>
+			</tr>
+		</table>
+
+		（5）$mutation:showPositionCoordinate=true (whether visualize the Coordinate information)<br>
+		（6）$mutation:position:rotationDegree=90 （Set the position rotation angle in Coordinate）<br>
+		（7）$mutation:showConsensusAnnotation=true （Whether highlight the consensus mutations of each variants）<br>
+		（8）$mutationInfo （Set mutation information）<br> This section has three setting ways: directly input, input mutation information file and input alignment file.
+
+		<h3>Main body content——How to set mutation information</h3>
+		<strong><em>1.	Directly input</em></strong>
+		<p>Information of multiple variants can be entered and the final displayed sites are the union of the mutations of all variants. Each variant needs a variant description line and followed the variant description line is the mutation information. The mutation information consists of three columns. The first column is the position of the mutation. The second column is the color of the marker. The third column is the annotation information displayed.</p>
+
+		<p>An example：</p>
+		<table border="1" align="center">
+			<tr>
+				<td>variant=Delta VOC <br> # position color annotation <br>
+					69 254,0,0,255 HV69- <br> 144 254,0,0,255 Y144- <br> 501
+					0,0,0,255 N501Y <br> 570 0,0,0,255 A570D <br> 681
+					0,254,0,255 P681H <br> 716 0,0,0,255 T716I <br> 982
+					0,0,0,255 S982A <br> 1118 0,0,0,255 D1118H <br>
+					variant=Alpha VOC <br> # position color annotation <br>
+					19 0,0,0,255 T19R <br> 452 0,254,0,255 L452R <br> 478
+					0,0,0,255 T478K <br> 681 0,254,0,255 P681R <br> 950
+					0,0,0,255 D950N <br>
+
+				</td>
+			</tr>
+		</table>
+
+		<strong><em>2. 	Input mutation information file</em></strong>
+
+		<p>
+			mutationFile=/mutationInfoFile.txt<br>
+			The “mutationInfoFile” format is one variant per line, and each line is formatted as “Name of variant:mut1,mut2…”
+
+		</p>
+
+		<p>An example:</p>
+		<table border="1" align="center">
+			<tr>
+				<td>$mutationInfo<br>
+					mutationsFile=config/bioData/genomicMuts/variant_of_cumulatedMuts_forVisulize.txt
+
+
+				</td>
+			</tr>
+		</table>
+
+		<p>Users can go to the software installation directory to view the file.</p>
+
+		<strong><em>3.	Input alignment file</em></strong>
+
+		<p>
+			alignmentFile=/alignmentFile.fas<br> The “alignmentFile” should be in fasta format.
+
+		</p>
+
+		<p>An example：</p>
+		<table border="1" align="center">
+			<tr>
+				<td>$mutationInfo<br>
+					alignmentFile=config/bioData/genomicMuts/example.longAlignedFasta_2.fas
+
+				</td>
+			</tr>
+		</table>
+
+		<p>Users can go to the software installation directory to view the file.</p>
+
+
+	</blockquote>
+</body>
+</html>

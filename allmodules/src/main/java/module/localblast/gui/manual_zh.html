@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title></title>
+</head>
+<body>
+
+	<blockquote>
+		<h3>解决的问题</h3>
+		<p>提供一个进行本地Blast的方便GUI使用模块</p>
+
+		<h3>快速开始</h3>
+		<p>所有操作都比较直观、易懂。请按照图形用户界面的指示进行操作。</p>
+		<p>详情信息：https://www.yuque.com/u21499046/egpsdoc/xgu030wloiho4sur</p>
+		<p>注：用户需要自己安装Blast本地版软件，然后提供blast bin目录。</p>
+		<ol>
+			<li>在图形界面上输入必要的参数，对于路径类的参数，用户可以通过鼠标拖拽或者复制路径等方式快速完成。</li>
+			<li>点击执行按钮运行并查看结果。</li>
+		</ol>
+
+		<h3>注意事项</h3>
+		<ol>
+			<li>为避免出现问题，所有文件的路径应该都是英文。</li>
+			<li>您可能会注意到，在BLAST
+				XML文件中，有时BLAST会用它自己生成的ID替换您的真实序列ID。例如，查询ID变为‘QUERY_1’、‘QUERY_2’，依此类推。而命中ID有时会变成‘GNL
+				|BL_ORD_ID| 1‘，’GNL |BL_ORD_ID|
+				2‘，依此类推。在这些情况下，BLAST会将真实序列ID及其描述集中在一起。<br>所以看到一些奇怪的字符不要紧张。</li>
+		</ol>
+
+		<h3>重要参数解答</h3>
+		<p>blast输出格式可以用outfmt控制，有18个格式，其中常用的outfmt 6 ，默认输出为：qseqid sseqid
+			pident length mismatch gapopen qstart qend sstart send evalue
+			bitscore。另外6、7、10、17格式可以调整输出内容。</p>
+		<p>这12列对应的信息分别是：</p>
+		<ol>
+			<li>Query id：查询序列ID标识</li>
+			<li>Subject id：比对上的目标序列ID标识</li>
+			<li>% identity：序列比对的一致性百分比</li>
+			<li>alignment length：符合比对的比对区域的长度</li>
+			<li>mismatches：比对区域的错配数</li>
+			<li>gap openings：比对区域的gap数目</li>
+			<li>q. start：比对区域在查询序列(Query id)上的起始位点</li>
+			<li>q. end：比对区域在查询序列(Query id)上的终止位点</li>
+			<li>s. start：比对区域在目标序列(Subject id)上的起始位点</li>
+			<li>s. end：比对区域在目标序列(Subject id)上的终止位点</li>
+			<li>e-value：比对结果的期望值，将比对序列随机打乱重新组合，和数据库进行比对，如果功能越保守，则该值越低；该E值越高说明比对的高得分值是由GC区域，重复序列导致的。对于判断同源性是非常有意义的几个参数。</li>
+			<li>bit score：比对结果的bit score值</li>
+		</ol>
+		<p>
+			-outfmt 支持生成SAM格式
+			<br>
+			alignment view options:
+		</p>
+		<ul>
+		<li>0 = Pairwise,</li>
+		<li>1 = Query-anchored showing identities,</li>
+		<li>2 = Query-anchored no identities,</li>
+		<li>3 = Flat query-anchored showing identities,</li>
+		<li>4 = Flat query-anchored no identities,</li>
+		<li>5 = BLAST XML,</li>
+		<li>6 = Tabular,</li>
+		<li>7 = Tabular with comment lines,</li>
+		<li>8 = Seqalign (Text ASN.1),</li>
+		<li>9 = Seqalign (Binary ASN.1),</li>
+		<li>10 = Comma-separated values,</li>
+		<li>11 = BLAST archive (ASN.1),</li>
+		<li>12 = Seqalign (JSON),</li>
+		<li>13 = Multiple-file BLAST JSON,</li>
+		<li>14 = Multiple-file BLAST XML2,</li>
+		<li>15 = Single-file BLAST JSON,</li>
+		<li>16 = Single-file BLAST XML2,</li>
+		<li>17 = Sequence Alignment/Map (SAM),</li>
+		<li>18 = Organism Report</li>
+		</ul>
+		
+	</blockquote>
+</body>
+</html>

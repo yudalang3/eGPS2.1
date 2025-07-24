@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>low volume text editor</title>
+</head>
+<body>
+
+	<blockquote>
+		<h3>Task to resolve</h3>
+		<p>Text present the back mutations.</p>
+
+		<h3>Quick start</h3>
+		<p>Any actions are straightforward. Please follow the GUI
+			instructions.</p>
+
+
+		<ol>
+			<li>Click the Example button to see the input data.</li>
+			<li>Click the Execute button to see the results.</li>
+		</ol>
+
+		<h3>Features of the heatmap:</h3>
+		<p>This module has the following features:</p>
+		<ul>
+			<li>To be able to transform data, including: 1) transposition;
+				2) various normalized transformations</li>
+			<li>Support visualization of large matrices</li>
+			<li>Support for adding labels to rows or columns</li>
+			<li>Support hierarchical clustering, K-means clustering.</li>
+			<li>Users can import phylogenetic trees and coexist with heat
+				maps</li>
+			<li>Support add block and gap conveniently</li>
+			<li>Highly interactive, drag and drop graphic elements</li>
+			<li>A good color configurator to set the color scheme</li>
+			<li>It can also be scripted and run like a command line.</li>
+
+		</ul>
+
+		<h3>The basics of heatmap:</h3>
+
+		<p>For a data matrix M = {x_ij}, let min be the minimum of the
+			matrix M and max be the maximum of M. Then define a gradient color
+			bar, for example from white to red. Then the color corresponding to
+			min is white, max corresponds to red, and the other values x_ij
+			display corresponding colors according to linear correspondence. This
+			is the heatmap, in principle, nothing more! So, for a heat map, some
+			operations are absolutely meaningless: for example</p>
+
+		<ol>
+			<li>Drag a piece out of the heatmap.</li>
+			<li>We change the color of a piece of cell in the heatmap.</li>
+		</ol>
+		<p>Users can customize the color bar of the heatmap, but a very
+			fine-grained correspondence of color relationships has not yet been
+			implemented. For example, assuming the data to be visualized has a
+			minimum value of 0 and a maximum value of 11, users need to customize
+			the range [0,1) to be white, the range [1,2) to be red, and the range
+			[2, +infinity) to be dark red.</p>
+
+		<p>The default interface display parameters of the heat map are:
+			the border of each cell, the row name, the column name and the
+			legend.</p>
+
+		<h3>Description of the parameter bar on the left</h3>
+
+		<h4>Convenient Operation</h4>
+		从上到下依此为：
+		<ol>
+			<li>The first one is adaptive button. When you change the window
+				size, you can press this button to automatically adapt to the
+				window.</li>
+			<li>The second is to re-set all parameters to the default state.</li>
+			<li>The third is the transpose of the input matrix.</li>
+			<li>Store the current parameters and data, similar to the save
+				when playing games</li>
+			<li>Restore, you can directly restore after saving data.</li>
+			<li>Import the evolution tree file, and arrange the evolution
+				tree on the left side. Note that the OUT tree's OUT name and number
+				are consistent with all row names.</li>
+		</ol>
+
+		<h4>Cell Properties</h4>
+		<p>The Cell Properties column has been added to adjust the color
+			and shape of each cell. All operations are very intuitive, and users
+			can explore on their own. The most important aspect of the heatmap,
+			the color scheme, can be set here. We have pre-set some color
+			schemes, and we also support users in customizing their own.
+			Selecting the costumed option allows for individual color
+			configuration, and detailed usage can be found in the following text.</p>
+		<h4>Data Transformation</h4>
+
+		Data Transformation: There are a variety of data transformation for
+		each row, if you need to transform the line, please transpose first.
+
+		<ol>
+			<li>Z-score is a standard normalization transform</li>
+			<li>Min-Max scaling with (x_ij –min) / (max - min) formula</li>
+			<li>Min-Max scaling是(x_ij –min) / (max - min) 变换；</li>
+			<li>conventional log transforms</li>
+			<li>Cox-Box transforms. The strategy we now implement for the
+				last transformation is : When the row data is all greater than 0,
+				the lambda takes the values {-2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2}
+				in turn, and then uses the Kolmogorov Smirnov Test to test the
+				normality of the data. Take the most normal lambda value and finally
+				give the average.</li>
+		</ol>
+
+		<h4>Hierarchical Clustering</h4>
+
+		There are three main types of parameters here. The first one is
+		hierarchical clustering. The change of component values in Element
+		triggers the clustering operation. Users can choose to cluster rows,
+		columns, or both. Hierarchical clustering has two important
+		parameters, including the calculation method of the distance matrix
+		and the Linkage method. The Keep original order option indicates
+		whether the tree of the cluster is to be ladderized. If the original
+		order is maintained, then this step is not performed.
+		<h4>K-Means++ Clustering</h4>
+		K-means clustering, after setting the parameters : Number of clusters,
+		Maximum iterations and the distance between each vector. Similarly,
+		clustering can be triggered by changes to component values in Element.
+		The results of K-means will be displayed like row annotations.
+
+		<h4>Display Options</h4>
+		Display is an option for visual effects: The first is Data values ,
+		which indicates whether to display the value of each heatmap grid. A
+		change in the component value in Value status triggers a change in the
+		heatmap. Number of decimals indicates the number of decimal places
+		displayed; Partial bounds factor is set for the Partial Ori. and
+		Partial Pre. options. When this option is selected: minValue<= x <=
+		minValue + factor and maxValue - factor <= x <= maxValue will be
+		displayed. This option is primarily aimed at people who are often
+		interested in extreme values.<br> <br> The second is the
+		Border option. Clicking on the Check box component will trigger an
+		update. The user can click the Col button to change the color.<br>
+		<br> The third is the Legend option. Clicking on the Check box
+		component will trigger an update. The size of the Legend is drawn
+		according to the length and width set.<br> <br> The fourth
+		and fifth operations are on row and column names. Clicking on the
+		Check box component will trigger an update. These operations are based
+		on the angle of rotation, font, and color.<br> <br> The
+		sixth is to configure the shape and color of the grid. The most
+		important color scheme for the heat map can be set here. We have
+		preset some color schemes, and we support users to do their own color
+		matching. You can configure the color yourself by selecting the
+		costumed option. See below for detailed usage.
+
+		<h4>Heatmap color scheme designer</h4>
+
+		The color scheme designer in the heatmap module can be toggled when
+		you click the Cell -> Color scheme -> costumed parameter in the
+		display options parameter bar.<br> <br> The top layer is a
+		preview of the gradient color, which can be previewed directly after
+		configuring the color.<br> <br> This is followed by a color
+		allocator that allows the user to add or remove color coordinates, and
+		each color coordinate can be re-set. In particular, we implemented a
+		full-screen color picker that allows users to pick colors from other
+		places.<br> <br> Below is a default color picker that takes
+		colors from the sample, HSV, HSL, RGB, CMYK sub-sections.<br> <br>
+		The finished color will show a preview here.<br> <br>
+		Finally, the corresponding button, Screen color picker can change the
+		global color selector, followed by the RGB value of a color. Clicking
+		the OK button will apply the current gradient on the heat map.
+
+
+		<h4>Layout option</h4>
+
+		In the final Layout option bar, we currently implement the rectangular
+		layout, because our heat map itself is highly interactive, so here are
+		just some of the results of the current assignment. A new circular
+		layout is added to circularize the heat map.
+
+		<h3>Interactive operations:</h3>
+		The interactive function of the heat map is described below. We will
+		take the heat map after importing the first example.<br> When the
+		mouse clicks on the node of the cluster tree, you can select the
+		corresponding cluster. The following menu will pop up when you right
+		click:<br>
+		<br> The first one is a new comment, and the CellType and
+		GeneClass on the right are comments. The new tree on the left will be
+		displayed as a line comment, and the tree above will be added as a
+		column comment. The second is to output the cluster information, which
+		will be output as a single file in the form of a row name or column
+		name. The third and fourth are to remove the comment, the fifth and
+		sixth are to remove the gap.<br>
+		<br> When the mouse clicks on the comment label in the figure,
+		the selected state is displayed, and pressing the "Delete" button
+		deletes the single comment.<br>
+		<br> When the mouse clicks on the grid, the activation status is
+		displayed. Drag and drop the grid to add gaps when the selection state
+		is activated.<br>
+		<br> You can also set a comment label when you drag and drop a
+		batch to select a row or column name. The difference is that it has
+		more features that can be loaded into existing tags.
+	</blockquote>
+</body>
+</html>

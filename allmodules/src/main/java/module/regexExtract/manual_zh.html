@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title></title>
+</head>
+<body>
+
+	<blockquote>
+		<h3>解决的问题</h3>
+		<p>给定一个文本文件，每一行都有固定格式的字符串。从每行字符串中提取目标信息。</p>
+
+		<h3>快速开始</h3>
+		<p>所有操作都比较直观、易懂。请按照图形用户界面的指示进行操作。</p>
+		<p>详情信息见：https://www.yuque.com/u21499046/egpsdoc/lwtrfaw3o46bzssb</p>
+
+		<h4>应用举例</h4>
+		<p>运行本模块的实例文件，我们现有文件内容如下：</p>
+		<pre>Saccharomyces cerevisiae - Baker's yeast (酿酒酵母)
+Caenorhabditis elegans - Nematode (秀丽隐杆线虫)
+Drosophila melanogaster - Fruit fly (黑腹果蝇)
+</pre>
+		<p>我们的想得到的结果是生成一个以Tab键分隔的文本内容如下：</p>
+		<pre>Saccharomyces cerevisiae	Baker's yeast	酿酒酵母
+Caenorhabditis elegans	Nematode	秀丽隐杆线虫
+Drosophila melanogaster	Fruit fly	黑腹果蝇
+</pre>
+		<p>这个需求，如果自己写脚本实现需要用到正则表达式。此时需要用IDE编写脚本，或者直接在终端窗口进行，编写完成的脚本一般只用一次。这样的操作对于科研工作者而言需要转换思维，使用起来并不方便。</p>
+
+		<p>因此该模块应运而生，使用这个模块只需要三步。</p>
+		<ol>
+			<li>从网页版AI模型中根据提取字符串的需求，生成正则表达式。例如，为实现本功能的正则表达式为(.*?)\\s*-\\s*(.*?)\\s*\\((.*?)\\)
+			</li>
+			<li>输入其余必须的参数，例如输入文件和输出文件地址</li>
+			<li>第三步就是运行，可以命令行运行，也可以在图形界面上点击运行的按钮</li>
+		</ol>
+		<p>小提示：输入文件和输出文件可以拓展或者直接粘贴字符串地址。可以利用VOICM的历史记录功能创建书签，下次有相同的需求也能继续用了。</p>
+
+		<h3>命令行使用</h3>
+		<p>$libPath为JAVA lib所在的目录，下面为使用的命令行：</p>
+		<p>java -cp "$libPath"
+            module.treenodecoll.CLI configFile</p>
+		<p>不过已经有VOICM运行脚本记录的功能，命令行使用其实反而更加麻烦。</p>
+
+	</blockquote>
+</body>
+</html>
