@@ -5,6 +5,8 @@
 
 Source code of eGPS 2.1 - an advanced bioinformatics analysis platform
 
+The official website of eGPS 2.1 is available at http://www.egps-software.org/ 
+
 ## Table of Contents
 
 - [About](#about)
@@ -20,11 +22,17 @@ Source code of eGPS 2.1 - an advanced bioinformatics analysis platform
 - [License](#license)
 - [Acknowledgments](#acknowledgments)
 
-## About
+## About and history
 
 eGPS (enhanced GPS) 2.1 is an advanced bioinformatics analysis platform that provides various tools for evolutionary analysis, sequence processing, phylogenetic tree construction and visualization. Unlike traditional GPS systems, eGPS 2.1 focuses on biological data analysis and offers a comprehensive set of modules for researchers in the field of evolutionary biology and genomics.
 
 This repository contains the source code for the eGPS 2.1 system, which is built using Java and requires Java 21 to run.
+
+This platform is designed to facilitate the analysis of biological data and to provide a comprehensive set of tools for researchers in the field of evolutionary biology and genomics.
+
+This project is officially started on the 2017.09 and first published in 2019.06.
+
+The repo. owner yudalang3 is the owner, starter and maintainer of this project.
 
 ## Features
 
@@ -42,10 +50,10 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-List of software, libraries, or tools that need to be installed before using this project:
-- Java Development Kit (JDK) 21 or higher
-- Apache Maven 3.6 or higher
-- Git
+For users (GUI users or command line users):
+
+For developers (module developers, mainframe developers and plug-ins developers): Please see [Contributing](#contributing)
+
 
 ### Installation
 
@@ -91,6 +99,11 @@ We welcome contributions to the eGPS 2.1 project. If you're interested in contri
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin feature/YourFeature`)
 5. Create a new Pull Request
+
+List of software, libraries, or tools that need to be installed before using this project:
+- Java Development Kit (JDK) 21 or higher
+- Apache Maven 3.6 or higher
+- Git
 
 Please read our [Contributing Guidelines](CONTRIBUTING.md) for more information.
 

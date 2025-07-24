@@ -5,6 +5,9 @@
 
 eGPS 2.1 源代码 - 先进的生物信息学分析平台
 
+All in one place 中文使用手册见：
+https://www.yuque.com/u21499046/egpsdoc
+
 ## 目录
 
 - [关于项目](#关于项目)
