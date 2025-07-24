@@ -15,6 +15,8 @@ eGPS 2.1 源代码 - 先进的生物信息学分析平台
 - [使用说明](#使用说明)
 - [模块介绍](#模块介绍)
 - [贡献指南](#贡献指南)
+- [在IntelliJ IDEA中运行](#在intellij-idea中运行)
+- [Maven配置](#maven配置)
 - [许可证](#许可证)
 - [致谢](#致谢)
 
@@ -91,6 +93,50 @@ eGPS 2.1由60多个专门用于各种生物信息学分析任务的模块组成�
 5. 创建新的Pull Request
 
 更多信息请阅读我们的[贡献指南](CONTRIBUTING.md)。
+
+## 在IntelliJ IDEA中运行
+
+要在IntelliJ IDEA中运行eGPS 2.1项目，请按照以下步骤操作：
+
+1. 打开IntelliJ IDEA
+2. 从欢迎界面选择"Open"或通过"File" -> "Open"菜单
+3. 导航到eGPS2.1项目目录并选择根文件夹
+4. IntelliJ IDEA应自动检测Maven项目结构
+5. 等待IntelliJ IDEA导入Maven依赖项
+6. 运行项目：
+   - 导航到您想要运行的主类或模块
+   - 右键单击类并选择"Run"或使用装订线中的绿色播放按钮
+   - 或者，您可以通过"Run" -> "Edit Configurations"创建运行配置，并添加新的Application配置
+
+注意：请确保您已在IntelliJ IDEA中配置了JDK 21或更高版本，路径为"File" -> "Project Structure" -> "Project" -> "Project SDK"。
+
+## Maven配置
+
+eGPS 2.1项目使用Maven进行依赖管理和构建自动化。主要的Maven配置详情如下：
+
+- **Java版本**：项目需要Java 21或更高版本（在父级[pom.xml](pom.xml)中配置）
+- **多模块结构**：项目遵循多模块结构，包含以下模块：
+  - `parent`：根模块，包含共享配置
+  - `mainframe`：主应用程序框架：注意此项目闭源
+  - `allmodules`：包含所有分析模块
+  - `ydl.lab.utils`：工具类和共享功能
+  - `application.example`：专门用于eGPS 2.1 来进行分析的模块
+
+- **依赖项**：
+  - 依赖项在父级[pom.xml](pom.xml)文件中管理
+  - 一些依赖项使用`system`作用域来引用[lib/](lib/)目录中的本地JAR文件
+  - 主要依赖项包括：Apache Commons、BioJava组件、FlatLaf外观和XChart可视化库
+
+- **资源管理**：
+  - 配置了`src/main/java`中的资源包含在构建中（除了`.java`文件）
+  - 这允许源代码目录中的XML和其他资源文件被正确打包
+
+从命令行构建项目：
+```bash
+mvn clean install
+```
+
+这将按正确顺序构建所有模块并创建必要的JAR文件。
 
 ## 许可证
 

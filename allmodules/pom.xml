@@ -24,7 +24,7 @@
             <artifactId>mainframe</artifactId>
             <version>2.1</version>
             <scope>system</scope>
-            <systemPath>C:/Users/yudal/Documents/project/eGPS2/jars/eGPS3/lib/eGPS_mainframe-2.1.jar</systemPath>
+            <systemPath>${basedir}/../lib/eGPS_mainframe-2.1.jar</systemPath>
         </dependency>
 
         <dependency>

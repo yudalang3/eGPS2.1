@@ -5,6 +5,7 @@
 *.log
 *.ctxt
 *.jar
+!lib/*.jar
 *.war
 *.nar
 *.ear
@@ -45,7 +46,6 @@ wntevol/
 
 # NetBeans
 nbproject/private/
-build/
 nbbuild/
 dist/
 nbdist/

@@ -15,6 +15,8 @@ Source code of eGPS 2.1 - an advanced bioinformatics analysis platform
 - [Usage](#usage)
 - [Modules](#modules)
 - [Contributing](#contributing)
+- [Running in IntelliJ IDEA](#running-in-intellij-idea)
+- [Maven Configuration](#maven-configuration)
 - [License](#license)
 - [Acknowledgments](#acknowledgments)
 
@@ -91,6 +93,50 @@ We welcome contributions to the eGPS 2.1 project. If you're interested in contri
 5. Create a new Pull Request
 
 Please read our [Contributing Guidelines](CONTRIBUTING.md) for more information.
+
+## Running in IntelliJ IDEA
+
+To run the eGPS 2.1 project in IntelliJ IDEA:
+
+1. Open IntelliJ IDEA
+2. Select "Open" from the welcome screen or go to "File" -> "Open"
+3. Navigate to the eGPS2.1 project directory and select the root folder
+4. IntelliJ IDEA should automatically detect the Maven project structure
+5. Wait for IntelliJ IDEA to import the Maven dependencies
+6. To run the project:
+   - Navigate to the main class or module you want to run
+   - Right-click on the class and select "Run" or use the green play button in the gutter
+   - Alternatively, you can create a run configuration by going to "Run" -> "Edit Configurations" and adding a new Application configuration
+
+Note: Make sure you have configured the JDK 21 or higher in IntelliJ IDEA under "File" -> "Project Structure" -> "Project" -> "Project SDK".
+
+## Maven Configuration
+
+The eGPS 2.1 project uses Maven for dependency management and build automation. Key Maven configuration details:
+
+- **Java Version**: The project requires Java 21 or higher (configured in the parent [pom.xml](pom.xml))
+- **Multi-module Structure**: The project follows a multi-module structure with the following modules:
+  - `parent`: The root module containing shared configuration
+  - `mainframe`: The main application framework: Note this is closed-source software
+  - `allmodules`: Contains all analysis modules
+  - `ydl.lab.utils`: Utility classes and shared functionality
+  - `application.example`: Specialized modules for Application of eGPS 2.1
+
+- **Dependencies**: 
+  - Dependencies are managed in the parent [pom.xml](pom.xml) file
+  - Some dependencies use `system` scope to reference local JAR files in the [lib/](lib/) directory
+  - Key dependencies include: Apache Commons, BioJava components, FlatLaf look and feel, and XChart for visualization
+
+- **Resource Management**:
+  - Resources in `src/main/java` are configured to be included in the build (except for `.java` files)
+  - This allows XML and other resource files in the source directories to be properly packaged
+
+To build the project from the command line:
+```bash
+mvn clean install
+```
+
+This will build all modules in the correct order and create the necessary JAR files.
 
 ## License
 
