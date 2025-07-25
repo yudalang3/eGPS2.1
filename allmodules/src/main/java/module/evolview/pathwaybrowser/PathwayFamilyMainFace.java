@@ -187,7 +187,7 @@ public class PathwayFamilyMainFace extends GeneFamilyMainFace {
 				List<String> value = entry.getValue();
 				List<Short> array = Lists.newArrayList();
 				for (String string : value) {
-					array.add(new Short(string));
+					array.add(Short.valueOf(string));
 				}
 				species2geneCountMap.put(entry.getKey(), array);
 			}

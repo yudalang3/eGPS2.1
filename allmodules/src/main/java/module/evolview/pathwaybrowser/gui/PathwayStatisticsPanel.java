@@ -17,7 +17,7 @@ import org.apache.poi.xslf.usermodel.XSLFTextBox;
 
 import egps2.panels.dialog.SwingDialog;
 import egps2.frame.gui.EGPSMainGuiUtil;
-import module.pptxio.Decoder4pptx;
+import egps2.utils.common.util.poi.pptx.Decoder4pptx;
 
 @SuppressWarnings("serial")
 public class PathwayStatisticsPanel extends JPanel {

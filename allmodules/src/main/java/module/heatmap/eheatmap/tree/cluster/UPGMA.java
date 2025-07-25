@@ -7,6 +7,7 @@ import java.util.List;
 import evoltree.struct.EvolNode;
 import module.heatmap.eheatmap.tree.GraphcsNode;
 import module.heatmap.eheatmap.tree.TreeMethod;
+import org.apache.commons.math3.random.MersenneTwister;
 
 /**
  * This is a bad example, be caution about resource on the Internet!
@@ -16,7 +17,7 @@ import module.heatmap.eheatmap.tree.TreeMethod;
  * @author Yudalang
  */
 public class UPGMA implements TreeMethod {
-
+	MersenneTwister rng = new MersenneTwister(8888);           // 32‑bit MT
 	/**
 	 * The content is: 0 1 3,4 These are the indexes! for two groups to joint!
 	 */
@@ -241,7 +242,7 @@ public class UPGMA implements TreeMethod {
 		int numOfEqualPairs = listOfJoints.size();
 		int chosenIndex = 0;
 		if (numOfEqualPairs > 1) {
-			chosenIndex = (int) (Math.random() * numOfEqualPairs);
+			chosenIndex = (int) (rng.nextDouble() * numOfEqualPairs);
 		}
 		int[] chosen = listOfJoints.get(chosenIndex);
 		join[0] = chosen[0];

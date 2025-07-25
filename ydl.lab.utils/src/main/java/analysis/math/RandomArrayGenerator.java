@@ -1,12 +1,21 @@
 package analysis.math;
 
-import cern.jet.random.Uniform;
-import cern.jet.random.engine.MersenneTwister64;
-import cern.jet.random.engine.RandomEngine;
+
+import org.apache.commons.math3.distribution.UniformRealDistribution;
+import org.apache.commons.math3.random.MersenneTwister;
 
 import java.util.Random;
 
 public class RandomArrayGenerator {
+
+	public double[] generateRandomDoublesByColt(int length, double min, double max, long seed) {
+		// 创建随机数生成器
+		// 有 MersenneTwister64 和MersenneTwister两个类
+		MersenneTwister rng = new MersenneTwister(seed);           // 32‑bit MT
+		UniformRealDistribution dist = new UniformRealDistribution(rng, min, max);
+
+		return dist.sample(length);
+	}
 	public double[] generateRandomDoubles(int length, double min, double max) {
 		Random random = new Random();
 		double[] randomArray = new double[length];
@@ -16,18 +25,7 @@ public class RandomArrayGenerator {
 		return randomArray;
 	}
 
-	public double[] generateRandomDoublesByColt(int length, double min, double max, long seed) {
-		// 创建随机数生成器
-		// 有 MersenneTwister64 和MersenneTwister两个类
-		RandomEngine engine = new MersenneTwister64((int) seed);
-		Uniform uniformDist = new Uniform(min, max, engine);
 
-		double[] randomArray = new double[length];
-		for (int i = 0; i < length; i++) {
-			randomArray[i] = uniformDist.nextDouble();
-		}
-		return randomArray;
-	}
 
 	public double[] generateRandomDoublesByMath3(int arrayLength, double min, double max, long seed) {
 		// 创建随机数生成器

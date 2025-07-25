@@ -3,12 +3,11 @@ package module.remnant.treeoperator.reconAlgo;
 import java.util.ArrayList;
 import java.util.List;
 
-import cern.jet.random.engine.MersenneTwister64;
-import egps2.utils.common.math.RandomUtil;
 import module.remnant.treeoperator.DefaultNode;
 import module.remnant.treeoperator.NodeEGPSv1;
 import module.remnant.treeoperator.io.TreeCoder;
 import module.remnant.treeoperator.util.GenealogyAnalyzer;
+import org.apache.commons.math3.random.MersenneTwister;
 
 /**
  * https://en.wikipedia.org/wiki/UPGMA
@@ -16,8 +15,8 @@ import module.remnant.treeoperator.util.GenealogyAnalyzer;
  * http://www.nmsr.org/upgma.htm
  */
 public class Upgma implements TreeReconMethod{
-	protected MersenneTwister64 random = RandomUtil.getMersenneTwister64();
-	
+	MersenneTwister rng = new MersenneTwister(8888);           // 32‑bit MT
+
 	protected GenealogyAnalyzer ga = new GenealogyAnalyzer();
 	protected List<int[]> listOfJoints = new ArrayList<int[]>(100);
 
@@ -237,7 +236,8 @@ public class Upgma implements TreeReconMethod{
         int numOfEqualPairs = listOfJoints.size();
         int chosenIndex = 0;
         if (numOfEqualPairs > 1) {
-        	chosenIndex = (int)(random.nextDouble() * numOfEqualPairs);
+
+        	chosenIndex = (int)(rng.nextDouble() * numOfEqualPairs);
         }
         int[] chosen = listOfJoints.get(chosenIndex);
         join[0] = chosen[0];

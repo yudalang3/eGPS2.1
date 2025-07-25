@@ -20,7 +20,7 @@ import com.google.common.collect.Maps;
 
 import egps2.panels.dialog.SwingDialog;
 import egps2.frame.gui.EGPSMainGuiUtil;
-import module.pptxio.Decoder4pptx;
+import egps2.utils.common.util.poi.pptx.Decoder4pptx;
 
 @SuppressWarnings("serial")
 public class PathwayDetailsPanel extends JPanel {

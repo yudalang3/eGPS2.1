@@ -9,7 +9,7 @@ The official website of eGPS 2.1 is available at http://www.egps-software.org/
 
 ## Table of Contents
 
-- [About](#about)
+- [About](#About-and-history)
 - [Features](#features)
 - [Getting Started](#getting-started)
 - [Prerequisites](#prerequisites)

@@ -25,7 +25,7 @@ import egps2.panels.dialog.SwingDialog;
 import egps2.UnifiedAccessPoint;
 import module.pill.gui.CtrlConvenientOperationPanel;
 import module.pill.gui.CtrlPathwayCompoentsPanel;
-import module.pptxio.Decoder4pptx;
+import egps2.utils.common.util.poi.pptx.Decoder4pptx;
 
 public class SkeletonMaker {
 

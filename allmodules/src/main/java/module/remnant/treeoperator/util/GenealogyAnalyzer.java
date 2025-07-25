@@ -10,8 +10,8 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 
-import cern.jet.random.engine.MersenneTwister64;
 import module.remnant.treeoperator.NodeEGPSv1;
+import org.apache.commons.math3.random.MersenneTwister;
 
 /**
  * @author  haipeng
@@ -35,8 +35,7 @@ public class GenealogyAnalyzer implements java.io.Serializable, Cloneable {
     protected Distribution dis;
     protected double[][] alleleFreq;
     
-    public MersenneTwister64 random = new MersenneTwister64(Calendar.getInstance().getTime());
-    
+
     /** Creates a new instance of GenealogyAnalyzer */
     public GenealogyAnalyzer() {
         branchs = new ArrayList<>(INITIAL_MAX_SAMPLE_SIZE * 2);
@@ -378,7 +377,8 @@ public class GenealogyAnalyzer implements java.io.Serializable, Cloneable {
      * Mutate an allele under the infinite site model
      */
     protected int sizeAfterMutation(int size) {
-        double ran = random.nextDouble();
+        MersenneTwister rng = new MersenneTwister(8888);
+        double ran = rng.nextDouble();
         size = (int)(Integer.MAX_VALUE * ran);
         return size;
     }

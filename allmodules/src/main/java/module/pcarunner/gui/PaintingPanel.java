@@ -9,10 +9,6 @@ import java.awt.geom.Line2D;
 
 import javax.swing.JPanel;
 
-import cern.colt.matrix.DoubleMatrix1D;
-import cern.colt.matrix.DoubleMatrix2D;
-import cern.colt.matrix.impl.DenseDoubleMatrix2D;
-import egps2.utils.common.math.pca.Pca;
 import egps2.utils.common.model.datatransfer.TwoTuple;
 import module.pcarunner.model.LocationCalculator;
 import module.pcarunner.model.PaintingLocations;
@@ -34,10 +30,11 @@ public class PaintingPanel extends JPanel {
 
 		int width = getWidth();
 		int height = getHeight();
-		TwoTuple<double[], double[]> twoDimMatrix = getTwoDimMatrix();
 
-		
 		calculator.setParameterModel(parameterModel);
+
+		TwoTuple<double[], double[]> twoDimMatrix = null;
+		//TODO use math lib to calculate the locations
 		PaintingLocations locations = calculator.calculatePaintingLocations(twoDimMatrix, width, height);
 
 		g2d.draw(new Line2D.Double(locations.getOriginCoordinate(), locations.getyMostCoordinate()));
@@ -95,47 +92,6 @@ public class PaintingPanel extends JPanel {
 	}
 	
 	
-	private TwoTuple<double[], double[]> getTwoDimMatrix() {
-		double[][] data = {
-	            {2.0,4.0,1.0,4.0,4.0,1.0,5.0,5.0,5.0,2.0,1.0,4.0}, 
-	            {2.0,6.0,3.0,1.0,1.0,2.0,6.0,4.0,4.0,4.0,1.0,5.0},
-	            {3.0,4.0,4.0,4.0,2.0,3.0,5.0,6.0,3.0,1.0,1.0,1.0},
-	            {3.0,6.0,3.0,3.0,1.0,2.0,4.0,6.0,1.0,2.0,4.0,4.0}, 
-	            {1.0,6.0,4.0,2.0,2.0,2.0,3.0,4.0,6.0,3.0,4.0,1.0}, 
-	            {2.0,5.0,5.0,3.0,1.0,1.0,6.0,6.0,3.0,2.0,6.0,1.0}
-	        };
 
-//	    	ThreeTuple<double[][], String[], String[]> readTXTFile = MatrixIO.readTXTFile("E:\\javaCode\\workSpace2\\eGPS_dev_resources\\exampleDataTestForDev\\PCA\\pca.list");
-//	    	double[][] data = readTXTFile.first;
-//	    	String[] rowNames = readTXTFile.second;
-//	    	String[] colNames = readTXTFile.third;
-	    	
-	    	
-	    	
-	        DoubleMatrix2D matrix = new DenseDoubleMatrix2D(data);
-	        Pca pca = new Pca();
-	        DoubleMatrix2D pm = pca.pcaTransform(matrix);
-
-	        // print the first two dimensions of the transformed matrix - they capture most of the variance of the original data
-	        
-	        DoubleMatrix2D viewPart = pm.viewPart(0, 0, pm.rows(), 2);
-	        DoubleMatrix1D v1 = viewPart.viewColumn(0);
-	        DoubleMatrix1D v2 = viewPart.viewColumn(1);
-	        
-	        
-	        //return new TwoTuple<double[], double[]>(v1.toArray(), v2.toArray());
-	        
-	        int numOfPoints = 2000;
-			double[] xx = new double[numOfPoints];
-	        double[] yy = new double[numOfPoints];
-	        for (int i = 0; i < numOfPoints; i++) {
-				xx[i] = i;
-				yy[i] = Math.abs(1000 - i);
-			}
-	        
-	        return new TwoTuple<double[], double[]>(xx,yy);
-	}
-	
-	
 
 }
