@@ -43,11 +43,11 @@ public class PrimerUtil {
     public static String forwardPrimersToreversePrimers(String base) {
         String result = "";
         switch (base) {
-            case "ElegantJTable":
+            case "A":
                 result = "T";
                 break;
             case "T":
-                result = "ElegantJTable";
+                result = "A";
                 break;
             case "C":
                 result = "G";

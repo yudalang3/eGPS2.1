@@ -7,7 +7,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import egps2.utils.common.math.Tools;
 import module.evolview.gfamily.work.calculator.browser.LocationCalculator;
 import module.evolview.gfamily.work.gui.browser.draw.AxisTicks;
 import module.evolview.gfamily.work.gui.browser.draw.DrawingPropertyLine;
@@ -72,7 +71,7 @@ public class CalculatorAlleleFreq implements LocationCalculator<DrawingPropertyP
 
 				scaleX.setLine(new Line2D.Double(xAxisLocation, y, xAxisLocation, y + tick));
 
-				scaleX.setAxisValue(Tools.formatInteger(i));
+				scaleX.setAxisValue(i);
 
 				scaleX.setValueLocation(new Point2D.Double(xAxisLocation, height - tickAndScaleValueDist));
 

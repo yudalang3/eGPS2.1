@@ -3,7 +3,7 @@ package module.remnant.datapanel;
 /**
 THIS PROGRAM IS PROVIDED "AS IS" WITHOUT ANY WARRANTIES (OR CONDITIONS),
 EXPRESS OR IMPLIED WITH RESPECT TO THE PROGRAM, INCLUDING THE IMPLIED WARRANTIES (OR CONDITIONS)
-OF MERCHANTABILITY AND FITNESS FOR ElegantJTable PARTICULAR PURPOSE. THE ENTIRE RISK ARISING OUT OF USE OR
+OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. THE ENTIRE RISK ARISING OUT OF USE OR
 PERFORMANCE OF THE PROGRAM AND DOCUMENTATION REMAINS WITH THE USER.
 */
 import java.awt.Component;
@@ -15,7 +15,7 @@ import java.util.Hashtable;
 
 /**
  *
- * ElegantJTable vertical layout manager similar to java.awt.FlowLayout. Like FlowLayout
+ * A vertical layout manager similar to java.awt.FlowLayout. Like FlowLayout
  * components do not expand to fill available space except when the horizontal
  * alignment is <code>BOTH</code> in which case components are stretched
  * horizontally. Unlike FlowLayout, components will not wrap to form another

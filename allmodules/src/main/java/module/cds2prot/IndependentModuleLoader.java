@@ -24,7 +24,7 @@ public class IndependentModuleLoader extends DIYToolModuleFace {
 
 	@Override
 	public String getShortDescription() {
-		return "ElegantJTable convenient graphic tool to quick translate coding squence (cds) to protein sequence.";
+		return "A convenient graphic tool to quick translate coding squence (cds) to protein sequence.";
 	}
 
 

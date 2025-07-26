@@ -39,20 +39,7 @@ public class HighlightPolymorphlicSitesSequenceJPanel extends AbstructSequenceCo
 			if (percentage != 100) {
 				String maxString = base.toUpperCase();
 				g2.setBackground(SequenceBaseColor.getBaseColor(maxString));
-//				if (maxString.contentEquals(SequenceBaseColor.ElegantJTable.getMessage())) {
-//					g2.setBackground(SequenceBaseColor.ElegantJTable.getColor());
-//				} else if (maxString.contentEquals(SequenceBaseColor.C.getMessage())) {
-//					g2.setBackground(SequenceBaseColor.C.getColor());
-//				} else if (maxString.contentEquals(SequenceBaseColor.G.getMessage())) {
-//					g2.setBackground(SequenceBaseColor.G.getColor());
-//				} else if (maxString.contentEquals(SequenceBaseColor.T.getMessage())) {
-//					g2.setBackground(SequenceBaseColor.T.getColor());
-//				} else if (maxString.contentEquals(SequenceBaseColor.U.getMessage())) {
-//					g2.setBackground(SequenceBaseColor.U.getColor());
-//				} else {
-//					g2.setBackground(SequenceBaseColor.OTHES.getColor());
-//				}
-				
+
 				g2.clearRect(XPos, yOffset - charHeight, charWidth, charHeight);
 			}
 

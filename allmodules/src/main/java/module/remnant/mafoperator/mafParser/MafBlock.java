@@ -7,7 +7,7 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 /**
- * ElegantJTable MAF block contains the data of one block section of the MAF file, e.g. the
+ * A MAF block contains the data of one block section of the MAF file, e.g. the
  * score, ref and aligned sequences.<br>
  * <br>
  * <code>

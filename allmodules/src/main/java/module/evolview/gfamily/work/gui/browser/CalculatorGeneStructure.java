@@ -8,7 +8,6 @@ import java.awt.geom.Rectangle2D;
 import java.util.ArrayList;
 import java.util.List;
 
-import egps2.utils.common.math.Tools;
 import module.evolview.gfamily.work.calculator.browser.LocationCalculator;
 import module.evolview.gfamily.work.gui.Triangle;
 import module.evolview.gfamily.work.gui.browser.draw.AxisTicks;
@@ -227,7 +226,7 @@ public class CalculatorGeneStructure implements LocationCalculator<DrawingProper
 
 				scaleX.setLine(new Line2D.Double(xAxisLocation, yAxisLocation, xAxisLocation, yAxisLocation + tick));
 
-				scaleX.setAxisValue(Tools.formatInteger(i));
+				scaleX.setAxisValue(i);
 
 				scaleX.setValueLocation(new Point2D.Double(xAxisLocation, yAxisLocation + metrics));
 

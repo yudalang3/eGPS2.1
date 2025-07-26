@@ -40,7 +40,7 @@ public class MafFastaParser implements AutoCloseable {
 	 * private Pattern mafBlockPat = Pattern.compile(
 	 * "^a\\sscore=([\\-\\d.])+$\n(^s.+\n)((^s.+\n)(^q.+\n)?(^i.+\n)?)+(e.+\n)*");
 	 * private Pattern fastaBlockPat = Pattern.
-	 * compile("^>(uc[a-z0-9\\.]+)_([ElegantJTable-Za-z0-9]+)[_\\d]+( [\\d]+){3} (([^\\s]+:[\\d]+-[\\d]+)([\\+-]))*$"
+	 * compile("^>(uc[a-z0-9\\.]+)_([A-Za-z0-9]+)[_\\d]+( [\\d]+){3} (([^\\s]+:[\\d]+-[\\d]+)([\\+-]))*$"
 	 * ); private Pattern coordinatsPat =
 	 * Pattern.compile("([^\\s]+):([\\d]+)-([\\d]+)$"); private Matcher matcher;
 	 */

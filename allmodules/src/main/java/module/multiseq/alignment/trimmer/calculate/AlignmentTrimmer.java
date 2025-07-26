@@ -47,7 +47,7 @@ public class AlignmentTrimmer {
 
 		/**
 		 * <pre>
-		 *                    ElegantJTable      T      C       G     ElegantJTable      T     C    G
+		 *                    A      T      C       G     A      T     C    G
 		 *                    1      2      3      [4     5      6]    7    8   1-based
 		 *                    0      1      2      [3     4      5     6)   7   0-based
 		 * </pre>

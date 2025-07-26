@@ -29,7 +29,7 @@ public class Demos2 extends Demos1 {
 
 		Map<String, Character> name2stateMap = new HashMap<>();
 //		name2stateMap.put("1", 'E');
-//		name2stateMap.put("2", 'ElegantJTable');
+//		name2stateMap.put("2", 'A');
 //		name2stateMap.put("3", 'E');
 //		name2stateMap.put("4", 'E');
 //		name2stateMap.put("5", 'B');

@@ -24,7 +24,7 @@ public class IndependentModuleLoader extends DIYToolModuleFace {
 
 	@Override
 	public String getShortDescription() {
-		return "ElegantJTable convenient graphic tool to merge expression mapped counts of genes calculated from the featureCounts program.";
+		return "A convenient graphic tool to merge expression mapped counts of genes calculated from the featureCounts program.";
 	}
 
 

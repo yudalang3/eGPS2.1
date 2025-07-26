@@ -150,7 +150,7 @@ public class FastSingleTreeVisualizer {
 				
 			}
 			// 你觉得b这个分支需要高亮，这里简单处理，让它覆盖一次
-			if ("Taxon ElegantJTable".equals(node.getName())) {
+			if ("Taxon A".equals(node.getName())) {
 				Color oriColor = g2d.getColor();
 				g2d.setColor(Color.green);
 				g2d.drawString(node.getReflectNode().getName(), xSelf + 5, ySelf + 5);

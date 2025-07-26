@@ -8,7 +8,6 @@ import java.util.List;
 import java.util.Optional;
 import java.util.OptionalDouble;
 
-import egps2.utils.common.math.Tools;
 import module.maplot.maplot.gui.MA_PlotDrawProperties;
 import module.maplot.maplot.model.DataModel;
 import module.maplot.maplot.model.IndicatingLine;
@@ -239,7 +238,7 @@ public class LocationCalculator {
 
 			scale.setXLine(new Line2D.Double(xAxisLocation, yForXAxis, xAxisLocation, yForXAxis - tick));
 
-			scale.setAxisValue(Tools.formatDoubleKeepTwoDecimal(per * newXRange + minXValue - xLeftBlink));
+			scale.setAxisValue(per * newXRange + minXValue - xLeftBlink);
 
 			scale.setValueLocation(new Point2D.Double(xAxisLocation, yForXAxis + metrics));
 
@@ -259,7 +258,7 @@ public class LocationCalculator {
 
 			scale.setXLine(new Line2D.Double(xForXAxis, yAxisLocation, xForXAxis + tick, yAxisLocation));
 
-			scale.setAxisValue(Tools.formatDoubleKeepTwoDecimal(per * newYRange + minYValue - yTopBlink));
+			scale.setAxisValue(per * newYRange + minYValue - yTopBlink);
 
 			scale.setValueLocation(new Point2D.Double(xForXAxis, yAxisLocation));
 

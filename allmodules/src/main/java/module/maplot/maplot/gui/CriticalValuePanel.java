@@ -174,7 +174,7 @@ public class CriticalValuePanel extends JPanel {
 		DataModel model = drawProperties.getCurrDrawingDataModel();
 
 		StringBuffer sb = new StringBuffer();
-		sb.append("ElegantJTable value\t");
+		sb.append("A value\t");
 		sb.append("M value");
 
 		List<String> headerFields = model.getHeaderFields();

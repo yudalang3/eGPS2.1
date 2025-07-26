@@ -17,7 +17,7 @@ import module.parsimonytre.algo.StateAfterMutation;
 
 /**
  * 
- * ElegantJTable collection of methods to deal with Mutations.
+ * A collection of methods to deal with Mutations.
  * 
  * @title MutationOperator
  * @createdDate 2021-03-02 10:13
@@ -895,7 +895,7 @@ public class MutationOperator {
 
 	/**
 	 * 输入一个字符串，判断其是否是一个突变的表示形式。 例如 A23406T，也可以是氨基酸的突变形式。 注意氨基酸也有ATCG四个字符。 具体的判定形式：
-	 * 不能小写 前面一段是A-Z还有-; 中间是 0-9 ; 后面是 ElegantJTable-Z还有-
+	 * 不能小写 前面一段是A-Z还有-; 中间是 0-9 ; 后面是 A-Z还有-
 	 * 
 	 * yudalang: 20221018，这个方法和下面的parse Mutation的方法重复了。
 	 * 

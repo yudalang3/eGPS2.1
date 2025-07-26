@@ -17,7 +17,7 @@ public class MyModuleLoader implements IModuleLoader,IInformation {
 
 	@Override
 	public String getShortDescription() {
-		return "ElegantJTable user-friendly tool for drawing venn diagram.";
+		return "A user-friendly tool for drawing venn diagram.";
 	}
 
 	@Override

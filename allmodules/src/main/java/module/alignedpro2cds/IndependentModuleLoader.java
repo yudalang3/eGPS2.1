@@ -26,7 +26,7 @@ public class IndependentModuleLoader extends DIYToolModuleFace {
 
 	@Override
 	public String getShortDescription() {
-		return "ElegantJTable convenient  graphic tool to quick translate protein alignment to CDS alignment.";
+		return "A convenient  graphic tool to quick translate protein alignment to CDS alignment.";
 	}
 
 

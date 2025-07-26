@@ -10,7 +10,7 @@ public class Tamura3ParamModel<E extends DistParameterLevel3> implements EvoPair
 		if (dpl.getValidateLength() < 1) {
 			return Double.NaN;
 		}
-		// ElegantJTable G C T
+		// A G C T
 		double[] countOf4Nucleotide = dpl.getTotalCountOf4Nucleotide();
 		double valLen = dpl.getValidateLength();
 

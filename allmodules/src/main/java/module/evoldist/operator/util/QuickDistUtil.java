@@ -19,7 +19,7 @@ public class QuickDistUtil {
 	/**
 	 * <pre>
 	 * 
-	 *  ElegantJTable    65    65    10
+	 *  A    65    65    10
 	 *  B    66    66    11
 	 *  C    67    67    12
 	 *  D    68    68    13

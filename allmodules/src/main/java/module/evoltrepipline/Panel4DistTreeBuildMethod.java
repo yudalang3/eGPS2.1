@@ -73,7 +73,7 @@ public class Panel4DistTreeBuildMethod extends AbstractPrefShowContent {
 
 		gridBagConstraints.gridy = 3;
 		JRadioButton upRadio = new JRadioButton(cctm.treeBuildMethod_value3_UPGMA);
-		upRadio.setToolTipText("Sneath P.H.ElegantJTable. and Sokal R.R. (1973). Numerical Taxonomy. Freeman, San Francisco.");
+		upRadio.setToolTipText("Sneath P.H.A. and Sokal R.R. (1973). Numerical Taxonomy. Freeman, San Francisco.");
 		upRadio.setFont(defaultFont);
 		jContentPane.add(upRadio, gridBagConstraints);
 

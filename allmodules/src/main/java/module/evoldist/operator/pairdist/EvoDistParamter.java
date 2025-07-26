@@ -1,20 +1,20 @@
 package module.evoldist.operator.pairdist;
 
 public class EvoDistParamter {
-	/** No. of ElegantJTable <-> G; No. of C <-> T */
+	/** No. of A <-> G; No. of C <-> T */
 	private double numOfTransition[];
-	/** ElegantJTable <-> (C,T); G <-> (C,T) */
+	/** A <-> (C,T); G <-> (C,T) */
 	private double numOfTransversion;
 	/** Sequences except ATGC( a.k.a fuzzy nucleotide or gap‘-’) */
 	private double validateLength;
-	/** count of ElegantJTable G C T */
+	/** count of A G C T */
 	private double[] countOf4NucleotideOfSeq1;
 	private double[] countOf4NucleotideOfSeq2;
 	/**
 	 * count of nucleotide to nucleotide when sequence compared! 
 	 * <pre>
-	 *   ElegantJTable G C T
-	 * ElegantJTable x11 x12 x13 x14
+	 *   A G C T
+	 * A x11 x12 x13 x14
 	 * G . . . 
 	 * C      . . . 
 	 * T             x44

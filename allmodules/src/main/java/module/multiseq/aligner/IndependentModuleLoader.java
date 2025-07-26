@@ -13,7 +13,7 @@ public class IndependentModuleLoader implements IModuleLoader{
 
 	@Override
 	public String getShortDescription() {
-		return "ElegantJTable convenient wrapper for the multi seqs aligner: MAFFT. (inheritance from eGPS 1)";
+		return "A convenient wrapper for the multi seqs aligner: MAFFT. (inheritance from eGPS 1)";
 	}
 
 	@Override

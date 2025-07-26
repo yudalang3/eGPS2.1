@@ -117,9 +117,9 @@ public abstract class GeneticCode implements AminoAcid, IGeneticCode {
 	}
 
 	/**
-	 * @param tripletNN : new char[] {'ElegantJTable','T','G'};
+	 * @param tripletNN : new char[] {'A','T','G'};
 	 * @param i         : an integer of 0,1,2;
-	 * @return three possible changes of <code>i</code>'s nucluetide.
+	 * @return three possible changes of <code>i</code>'s nucleotide.
 	 */
 	private String[] possibleTripletNucls(char[] tripletNN, int i) {
 		String[] ret = new String[3];

@@ -28,7 +28,7 @@ public class JTableDefaultTableModelTest extends JFrame{
         setTitle("表格");
         setBounds(100,100,500,400);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        String[] columnNames = {"ElegantJTable","B"};   //列名
+        String[] columnNames = {"A","B"};   //列名
         String [][]tableVales={{"A1","B1"},{"A2","B2"},{"A3","B3"},{"A4","B4"},{"A5","B5"}}; //数据
         tableModel = new DefaultTableModel(tableVales,columnNames);
         table = new JTable(tableModel);
@@ -50,7 +50,7 @@ public class JTableDefaultTableModelTest extends JFrame{
         scrollPane.setViewportView(table);
         final JPanel panel = new JPanel();
         getContentPane().add(panel,BorderLayout.SOUTH);
-        panel.add(new JLabel("ElegantJTable: "));
+        panel.add(new JLabel("A: "));
         aTextField = new JTextField("A4",10);
         panel.add(aTextField);
         panel.add(new JLabel("B: "));
@@ -62,7 +62,7 @@ public class JTableDefaultTableModelTest extends JFrame{
                 String []rowValues = {aTextField.getText(),bTextField.getText()};
                 tableModel.addRow(rowValues);  //添加一行
                 int rowCount = table.getRowCount() +1;   //行数加上1
-                aTextField.setText("ElegantJTable"+rowCount);
+                aTextField.setText("A"+rowCount);
                 bTextField.setText("B"+rowCount);
             }
         });

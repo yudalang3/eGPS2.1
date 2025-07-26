@@ -13,34 +13,34 @@ public class AmbiguousNuclBase {
 	List<String> outputStrs = new ArrayList<>();
 
 	public AmbiguousNuclBase() {
-//		R (puRine) - ElegantJTable 或 G
+//		R (puRine) - A 或 G
 //		Y (pYrimidine) - C, T 或 U
-//		M (aMino) - ElegantJTable 或 C
+//		M (aMino) - A 或 C
 //		K (Keto) - G, T 或 U
 //		S (Strong) - C 或 G (三键氢键)
-//		W (Weak) - ElegantJTable 或 T (两键氢键)
-//		H (not G) - ElegantJTable, C 或 T
-//		B (not ElegantJTable) - C, G 或 T
-//		V (not T) - ElegantJTable, C 或 G
-//		D (not C) - ElegantJTable, G 或 T
-//		N (aNy) - ElegantJTable, C, G 或 T
+//		W (Weak) - A 或 T (两键氢键)
+//		H (not G) - A, C 或 T
+//		B (not A) - C, G 或 T
+//		V (not T) - A, C 或 G
+//		D (not C) - A, G 或 T
+//		N (aNy) - A, C, G 或 T
 
 		// 根据注释信息填充映射
 		map.put('A', Arrays.asList('A'));
 		map.put('T', Arrays.asList('T'));
 		map.put('C', Arrays.asList('C'));
 		map.put('G', Arrays.asList('G'));
-		map.put('R', Arrays.asList('A', 'G')); // R (puRine) - ElegantJTable 或 G
+		map.put('R', Arrays.asList('A', 'G')); // R (puRine) - A 或 G
 		map.put('Y', Arrays.asList('C', 'T')); // Y (pYrimidine) - C, T 或 U
-		map.put('M', Arrays.asList('A', 'C')); // M (aMino) - ElegantJTable 或 C
+		map.put('M', Arrays.asList('A', 'C')); // M (aMino) - A 或 C
 		map.put('K', Arrays.asList('G', 'T')); // K (Keto) - G, T 或 U
 		map.put('S', Arrays.asList('C', 'G')); // S (Strong) - C 或 G (三键氢键)
-		map.put('W', Arrays.asList('A', 'T')); // W (Weak) - ElegantJTable 或 T (两键氢键)
-		map.put('H', Arrays.asList('A', 'C', 'T')); // H (not G) - ElegantJTable, C 或 T
-		map.put('B', Arrays.asList('C', 'G', 'T')); // B (not ElegantJTable) - C, G 或 T
-		map.put('V', Arrays.asList('A', 'C', 'G')); // V (not T) - ElegantJTable, C 或 G
-		map.put('D', Arrays.asList('A', 'G', 'T')); // D (not C) - ElegantJTable, G 或 T
-		map.put('N', Arrays.asList('A', 'C', 'G', 'T')); // N (aNy) - ElegantJTable, C, G 或 T
+		map.put('W', Arrays.asList('A', 'T')); // W (Weak) - A 或 T (两键氢键)
+		map.put('H', Arrays.asList('A', 'C', 'T')); // H (not G) - A, C 或 T
+		map.put('B', Arrays.asList('C', 'G', 'T')); // B (not A) - C, G 或 T
+		map.put('V', Arrays.asList('A', 'C', 'G')); // V (not T) - A, C 或 G
+		map.put('D', Arrays.asList('A', 'G', 'T')); // D (not C) - A, G 或 T
+		map.put('N', Arrays.asList('A', 'C', 'G', 'T')); // N (aNy) - A, C, G 或 T
 
 	}
 

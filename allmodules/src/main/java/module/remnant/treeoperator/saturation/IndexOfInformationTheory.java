@@ -81,7 +81,7 @@ public class IndexOfInformationTheory {
 		double totalNumOfNucleotides = numOfSeqs * len;
 		
 		for (int i = 0; i < len; i++) {
-			// ElegantJTable C G T
+			// A C G T
 			int[] numOfEachNucleotides = new int[4];
 			for (int j = 0; j < numOfSeqs; j++) {
 				char c = alignedSequences[j].charAt(i);

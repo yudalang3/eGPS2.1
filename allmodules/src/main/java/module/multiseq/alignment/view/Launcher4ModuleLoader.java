@@ -22,7 +22,7 @@ public class Launcher4ModuleLoader implements IModuleLoader{
 
 	@Override
 	public String getShortDescription() {
-		return "ElegantJTable convenient remnant to view the multiple sequence alignment.";
+		return "A convenient remnant to view the multiple sequence alignment.";
 	}
 
 	@Override

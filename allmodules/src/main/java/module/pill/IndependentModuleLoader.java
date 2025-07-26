@@ -16,7 +16,7 @@ public class IndependentModuleLoader implements IModuleLoader{
 
 	@Override
 	public String getShortDescription() {
-		return "ElegantJTable user-friendly de novo pathway drawer.";
+		return "A user-friendly de novo pathway drawer.";
 	}
 
 	@Override

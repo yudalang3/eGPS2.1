@@ -319,7 +319,7 @@ public class Upgma implements TreeReconMethod{
 		distance[4] = temp4;
 		distance[5] = temp5;
 
-		String[] names = { "Turtle ElegantJTable", "Man B", "Tuna C", "Chiken D", "Moth E","Monkey F","Dog G" };
+		String[] names = { "Turtle A", "Man B", "Tuna C", "Chiken D", "Moth E","Monkey F","Dog G" };
 		Upgma upgma = new Upgma();
 		NodeEGPSv1 root = upgma.tree(distance, names);
 

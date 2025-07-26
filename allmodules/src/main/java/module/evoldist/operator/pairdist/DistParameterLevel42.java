@@ -5,8 +5,8 @@ public class DistParameterLevel42 extends DistParameterLevel3{
 	/**
 	 * count of nucleotide to nucleotide when sequence compared! 
 	 * <pre>
-	 *   ElegantJTable G C T
-	 * ElegantJTable x11 x12 x13 x14
+	 *   A G C T
+	 * A x11 x12 x13 x14
 	 * G . . . 
 	 * C      . . . 
 	 * T             x44

@@ -25,7 +25,7 @@ import egps2.modulei.RunningTask;
 /**
  * 
  * <p>
- * Description: ElegantJTable pipeline from obtaining data from REST and finally executing
+ * Description: A pipeline from obtaining data from REST and finally executing
  * the operations !
  * </p>
  * 

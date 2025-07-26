@@ -2,7 +2,7 @@ package module.evoldist.operator.pairdist;
 
 public class DistParameterLevel3 extends DistParameterLevel2 {
 
-	/** count of ElegantJTable G C T */
+	/** count of A G C T */
 	protected double[] totalCountOf4Nucl;
 	
 	public DistParameterLevel3() {

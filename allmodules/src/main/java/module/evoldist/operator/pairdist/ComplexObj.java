@@ -6,7 +6,7 @@ public class ComplexObj extends SimpleObj {
 	double[][] countOfnucl2nuc = new double[4][4];
 
 	/**
-	 * @param index : ElegantJTable G C T index of count to add(0,1,2,3)
+	 * @param index : A G C T index of count to add(0,1,2,3)
 	 * @param value : value to be added
 	 */
 	public void addSeq1CountInfo(int index, double value) {
@@ -14,7 +14,7 @@ public class ComplexObj extends SimpleObj {
 	}
 
 	/**
-	 * @param index : ElegantJTable G C T index of count to add
+	 * @param index : A G C T index of count to add
 	 * @param value : value to be added
 	 */
 	public void addSeq2CountInfo(int index, double value) {
@@ -22,7 +22,7 @@ public class ComplexObj extends SimpleObj {
 	}
 
 	/**
-	 * ElegantJTable G C T ElegantJTable G C T
+	 * A G C T A G C T
 	 */
 	public void addToCountMatrix(int i, int j, double value) {
 		countOfnucl2nuc[i][j] += value;

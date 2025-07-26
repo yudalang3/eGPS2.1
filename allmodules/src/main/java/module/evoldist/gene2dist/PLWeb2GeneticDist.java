@@ -11,7 +11,7 @@ import module.evoltrepipline.ParameterAssigner;
 
 /**
  * 
- * ElegantJTable pipeline from obtaining data from REST, calculate genetic distance and
+ * A pipeline from obtaining data from REST, calculate genetic distance and
  * finally executing the operations !
  * 
  * @ClassName: GeneToGeneticDistAndJump.java

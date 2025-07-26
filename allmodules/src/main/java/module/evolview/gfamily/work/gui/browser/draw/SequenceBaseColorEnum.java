@@ -7,7 +7,7 @@ import java.util.function.Supplier;
  * Define the background color of each base of sequence alignmet
  */
 public enum SequenceBaseColorEnum {
-    A("ElegantJTable", () -> new Color(100, 247, 63, 100)), B("B", () -> new Color(186, 85, 211, 100)), C("C", () -> new Color(255, 179, 64, 100)), D("D", () -> new Color(247, 63, 143, 100)),
+    A("A", () -> new Color(100, 247, 63, 100)), B("B", () -> new Color(186, 85, 211, 100)), C("C", () -> new Color(255, 179, 64, 100)), D("D", () -> new Color(247, 63, 143, 100)),
     E("E", () -> new Color(137, 245, 134, 100)), F("F", () -> new Color(64, 224, 208, 100)), G("G", () -> new Color(138, 43, 226, 100)), H("H", () -> new Color(165, 42, 42, 100)),
     I("I", () -> new Color(222, 184, 135, 100)), J("J", () -> new Color(95, 158, 160, 100)), K("K", () -> new Color(127, 100, 0, 100)), L("L", () -> new Color(210, 105, 30, 100)),
     M("M", () -> new Color(255, 127, 80, 100)), N("N", () -> new Color(100, 149, 237, 100)), O("O", () -> new Color(224, 255, 255, 100)), P("P", () -> new Color(220, 20, 60, 100)),
@@ -34,7 +34,7 @@ public enum SequenceBaseColorEnum {
 
     public static Color getBaseColor(String base) {
         switch (base.toUpperCase()) {
-            case "ElegantJTable":
+            case "A":
                 return A.getColor();
             case "B":
                 return B.getColor();

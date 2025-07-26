@@ -10,8 +10,8 @@ public class TheVertebrateMitochondrialCode extends GeneticCode{
 			"CAC H His", "CGC R Arg", "CTA L Leu", "CCA P Pro", "CAA Q Gln", "CGA R Arg", "CTG L Leu", "CCG P Pro",
 			"CAG Q Gln", "CGG R Arg", "ATT I Ile", "ACT T Thr", "AAT N Asn", "AGT S Ser", "ATC I Ile", "ACC T Thr",
 			"AAC N Asn", "AGC S Ser", "ATA M Met", "ACA T Thr", "AAA K Lys", "AGA * Ter", "ATG M Met", "ACG T Thr",
-			"AAG K Lys", "AGG * Ter", "GTT V Val", "GCT ElegantJTable Ala", "GAT D Asp", "GGT G Gly", "GTC V Val", "GCC ElegantJTable Ala",
-			"GAC D Asp", "GGC G Gly", "GTA V Val", "GCA ElegantJTable Ala", "GAA E Glu", "GGA G Gly", "GTG V Val", "GCG ElegantJTable Ala",
+			"AAG K Lys", "AGG * Ter", "GTT V Val", "GCT A Ala", "GAT D Asp", "GGT G Gly", "GTC V Val", "GCC A Ala",
+			"GAC D Asp", "GGC G Gly", "GTA V Val", "GCA A Ala", "GAA E Glu", "GGA G Gly", "GTG V Val", "GCG A Ala",
 			"GAG E Glu", "GGG G Gly" };
 
 	public TheVertebrateMitochondrialCode() {

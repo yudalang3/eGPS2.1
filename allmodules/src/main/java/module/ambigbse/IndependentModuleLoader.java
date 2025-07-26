@@ -28,7 +28,7 @@ public class IndependentModuleLoader extends DIYToolModuleFace {
 
 	@Override
 	public String getShortDescription() {
-		return "ElegantJTable convenient graphic tool to make the nucleotide sequence to concrete sequence.";
+		return "A convenient graphic tool to make the nucleotide sequence to concrete sequence.";
 	}
 
 

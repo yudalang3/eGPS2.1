@@ -11,7 +11,7 @@ public class TamuraNeiModel<E extends DistParameterLevel41> implements EvoPairwi
 			return Double.NaN;
 		}
 
-		// ElegantJTable G C T
+		// A G C T
 		double[] countOf4Nucleotide = t.getTotalCountOf4Nucleotide();
 		double valLen = t.getValidateLength();
 

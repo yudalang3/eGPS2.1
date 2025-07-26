@@ -11,7 +11,7 @@ import java.util.LinkedHashMap;
  * @ClassName: ReadFrequencyFile
  * @Description: 读取序列的频率文件，格式如下：
  * <pre>
- * position	ElegantJTable	C	G	T
+ * position	A	C	G	T
  * 1	  0.677430	  0.085656	  0.000000	  0.236914	
  * 2	  0.000000	  0.000340	  0.999660	  0.000000	
  * 3	  0.000000	  0.000000	  1.000000	  0.000000

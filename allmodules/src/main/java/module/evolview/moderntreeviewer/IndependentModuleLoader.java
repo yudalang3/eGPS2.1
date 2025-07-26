@@ -25,7 +25,7 @@ public class IndependentModuleLoader implements IModuleLoader {
 
 	@Override
 	public String getShortDescription() {
-		return "ElegantJTable modern tree operation and visualization complex remnant.";
+		return "A modern tree operation and visualization complex remnant.";
 	}
 
 	@Override

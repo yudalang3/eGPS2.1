@@ -13,8 +13,8 @@ import java.util.Set;
  * 
  * <pre>
  * Node in a Tree(or a graphics) has the following properties. 
- * (1) ElegantJTable Node may have zero to many children Nodes
- * (2) ElegantJTable Node may have zero to many parent Nodes
+ * (1) A Node may have zero to many children Nodes
+ * (2) A Node may have zero to many parent Nodes
  * (3) Node can have branch associated with it.
  * </pre>
  * </p>
@@ -79,9 +79,7 @@ public interface NodeEGPSv1{
 	 * a rule ? QUESTION: Why not make it a static method in Node utility? Answer:
 	 * Make a rule ?
 	 * 
-	 * @param par
-	 *            is it-self
-	 * @return ElegantJTable Node's all children, including it-self.
+	 * @return A Node's all children, including it-self.
 	 */
 	Set<NodeEGPSv1> getAll_leaves();
 

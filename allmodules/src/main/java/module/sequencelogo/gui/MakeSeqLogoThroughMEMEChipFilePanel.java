@@ -97,7 +97,7 @@ public class MakeSeqLogoThroughMEMEChipFilePanel extends JPanel {
 		JTextArea textArea = new JTextArea();
 		textArea.setFont(globalFont);
 		textArea.setText(
-				"MEME version 5.5.0 (Wed Sep 7 14:18:26 2022 -0700)\n\nALPHABET= ACGT\n\nstrands: + -\n\nBackground letter frequencies (from file `./background'):\nElegantJTable 0.39150 C 0.10850 G 0.39150 T 0.10850 \n\nMOTIF 1 AGGARG-MEME-1\n\nletter-probability matrix: alength= 4 w= 6 nsites= 2942 E= 2.1e-046\n  0.677430	  0.085656	  0.000000	  0.236914\t\n  0.999660	  0.000340	  0.000000	  0.000000\t\n  0.000000	  1.000000	  0.000000	  0.000000\t\n  0.784840	  0.040109	  0.175051	  0.000000\t\n  0.000000	  0.054045	  0.391230	  0.554725\t\n  0.000000	  1.000000	  0.000000	  0.000000\t");
+				"MEME version 5.5.0 (Wed Sep 7 14:18:26 2022 -0700)\n\nALPHABET= ACGT\n\nstrands: + -\n\nBackground letter frequencies (from file `./background'):\nA 0.39150 C 0.10850 G 0.39150 T 0.10850 \n\nMOTIF 1 AGGARG-MEME-1\n\nletter-probability matrix: alength= 4 w= 6 nsites= 2942 E= 2.1e-046\n  0.677430	  0.085656	  0.000000	  0.236914\t\n  0.999660	  0.000340	  0.000000	  0.000000\t\n  0.000000	  1.000000	  0.000000	  0.000000\t\n  0.784840	  0.040109	  0.175051	  0.000000\t\n  0.000000	  0.054045	  0.391230	  0.554725\t\n  0.000000	  1.000000	  0.000000	  0.000000\t");
 		// textArea.setBorder(BorderFactory.createLineBorder(Color.BLACK));
 		textArea.setLineWrap(true);
 		textArea.setWrapStyleWord(true);

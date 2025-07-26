@@ -8,11 +8,11 @@ import java.util.Set;
  * Title: BioNode Description: The Node interface for the evolutaional node.
  * <pre>
  * Node in a Tree(or a graphics) has the following properties. 
- * (1) ElegantJTable Node may have zero to many children Nodes
- * (2) ElegantJTable Node may have zero to many parent Nodes
+ * (1) A Node may have zero to many children Nodes
+ * (2) A Node may have zero to many parent Nodes
  * (3) Node can have branch associated with it.
  * </pre>
- * Define an abstruct node. Node should not related with GUI!
+ * Define an abstract node. Node should not relate with GUI!
  * We need to subject to JDK collection frame API design pattern!<br>
  * The node is a generic type class.
  * </p>

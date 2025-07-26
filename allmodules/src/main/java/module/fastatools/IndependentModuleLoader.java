@@ -16,7 +16,7 @@ public class IndependentModuleLoader implements IModuleLoader{
 
 	@Override
 	public String getShortDescription() {
-		return "ElegantJTable collection of several fasta file process tools.";
+		return "A collection of several fasta file process tools.";
 	}
 
 	@Override

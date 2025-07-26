@@ -135,7 +135,7 @@ public class GFF3Feature {
 	 * @param location The location of the feature. (calculated from GFF start, end and strand fields).
 	 * @param score The score field (field 7).
 	 * @param frame The frame or phase field (field 8).
-	 * @param attributes ElegantJTable string of key/value pairs separated by semicolons (field 9).
+	 * @param attributes A string of key/value pairs separated by semicolons (field 9).
 	 */
 	public GFF3Feature(String seqname, String source, String type, GenomicRange location, Double score, int frame,
 			String attributes) {

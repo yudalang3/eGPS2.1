@@ -300,7 +300,7 @@ public class LeftToolJPanel extends JPanel {
 				textField.setEnabled(true);
 				mainPanel.getRightTabbedPanel().repaint();
 				
-				xAxisTitleField.setText("ElegantJTable");
+				xAxisTitleField.setText("A");
 				yAxisTitleField.setText("M");
 				
 				mainPanel.invokeTheFeatureOfIndex(0);

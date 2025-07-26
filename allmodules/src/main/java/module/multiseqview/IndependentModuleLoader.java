@@ -19,7 +19,7 @@ public class IndependentModuleLoader implements IModuleLoader{
 
 	@Override
 	public String getShortDescription() {
-		return "ElegantJTable user-friendly visualization remnant for gene features like domain and motif, design for multiple sequences.";
+		return "A user-friendly visualization remnant for gene features like domain and motif, design for multiple sequences.";
 	}
 
 	@Override

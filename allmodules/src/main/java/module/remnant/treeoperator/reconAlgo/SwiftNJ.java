@@ -423,8 +423,8 @@ public class SwiftNJ implements TreeReconMethod {
 	/**
 	 * If the above inequalities are both satisfied, we determine that OTUs x and
 	 * y01 are neighbors. Estimate external branch lengths (BL) between OTUs x and
-	 * y01 and the adjacent node ElegantJTable as: BL[x, ElegantJTable] = D[x,y01]/2 + {D[x,y02] + D[x,y03]
-	 * - D[y01,y02] - D[y01,y03]}/4; BL[y01,ElegantJTable] = D[x,y01] - BL[x,ElegantJTable]
+	 * y01 and the adjacent node A as: BL[x, A] = D[x,y01]/2 + {D[x,y02] + D[x,y03]
+	 * - D[y01,y02] - D[y01,y03]}/4; BL[y01,A] = D[x,y01] - BL[x,A]
 	 * 
 	 * If OTUsxory1 are involved in previously suppressed OTUs because of
 	 * nonneighbors, release it from suppression. Suppress the OTU whose
@@ -451,10 +451,10 @@ public class SwiftNJ implements TreeReconMethod {
 		BL_x_anc = (BL_x_anc < 0 ? 0 : BL_x_anc);
 
 		///////////////////////////////////////////////////////////////////////////////////////////
-		// BL[y1,ElegantJTable] is not correct in the poster of Prof. Saitou, due to typerror.
+		// BL[y1,A] is not correct in the poster of Prof. Saitou, due to typerror.
 		// They are corrected according to Figure 1.
-		// In the poster, it is BL[x,ElegantJTable] = ...... = D[x,y1] - BL[x ,ElegantJTable]
-		//         It should be BL[x,ElegantJTable] = ...... = D[x,y1] - BL[y1,ElegantJTable]
+		// In the poster, it is BL[x,A] = ...... = D[x,y1] - BL[x ,A]
+		//         It should be BL[x,A] = ...... = D[x,y1] - BL[y1,A]
 		// 
 		// Or see Eq17.38b in Page422. This equation is correct.
 		///////////////////////////////////////////////////////////////////////////////////////////
@@ -520,7 +520,7 @@ public class SwiftNJ implements TreeReconMethod {
 	/**
 	 * Apply the four-point metric to the remaining unsuppressed four OTUs, and
 	 * determine two neighbors simulataneously. Estimate four external branches. The
-	 * internal branch between nodes ElegantJTable and B are computed as follows: BL[ElegantJTable,B] =
+	 * internal branch between nodes A and B are computed as follows: BL[A,B] =
 	 * {D[x,y02] + D[y01,y03] + D[x, y03] + D[y01,y02]}/4 - {D[x,y01] +
 	 * D[y02,y03]}/2
 	 * 

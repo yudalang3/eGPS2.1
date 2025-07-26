@@ -207,7 +207,7 @@ public class BootstrapDistCalculator<E extends DistParameterLevel1> extends Dist
 		//System.out.println("This is bootstrap times\t" + bootstrapRunTimeIndex);
 		
 		/** YDL: This is the situation when some bootstrap segement, unfortunately be gap, i.e.:
-		 *  ElegantJTable T T
+		 *  A T T
 		 *  T G G
 		 *  - - -
 		 *  g t a

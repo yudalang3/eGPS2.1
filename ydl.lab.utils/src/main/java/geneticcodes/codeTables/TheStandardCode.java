@@ -8,8 +8,8 @@ public class TheStandardCode extends GeneticCode{
 			"TAA *", "TGA *", "TTG L", "TCG S", "TAG *", "TGG W", "CTT L", "CCT P", "CAT H", "CGT R", "CTC L", "CCC P",
 			"CAC H", "CGC R", "CTA L", "CCA P", "CAA Q", "CGA R", "CTG L", "CCG P", "CAG Q", "CGG R", "ATT I", "ACT T",
 			"AAT N", "AGT S", "ATC I", "ACC T", "AAC N", "AGC S", "ATA I", "ACA T", "AAA K", "AGA R", "ATG M", "ACG T",
-			"AAG K", "AGG R", "GTT V", "GCT ElegantJTable", "GAT D", "GGT G", "GTC V", "GCC ElegantJTable", "GAC D", "GGC G", "GTA V", "GCA ElegantJTable",
-			"GAA E", "GGA G", "GTG V", "GCG ElegantJTable", "GAG E", "GGG G" };
+			"AAG K", "AGG R", "GTT V", "GCT A", "GAT D", "GGT G", "GTC V", "GCC A", "GAC D", "GGC G", "GTA V", "GCA A",
+			"GAA E", "GGA G", "GTG V", "GCG A", "GAG E", "GGG G" };
 	
 	public TheStandardCode() {
 		initializeMap(tripletNNs_aas);

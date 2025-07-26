@@ -53,7 +53,7 @@ public class DistParameterPareparerABAsGap implements DistParameterPareparer {
 	/**
 	 * Judge if two chars is transition!
 	 * 
-	 * @return -1: not transition ; 0: ElegantJTable <-> G; 1: T <-> C;
+	 * @return -1: not transition ; 0: A <-> G; 1: T <-> C;
 	 */
 	protected byte isTransition(char a, char b) {
 		byte ret = -1;

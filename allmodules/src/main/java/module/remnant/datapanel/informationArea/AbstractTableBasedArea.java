@@ -32,7 +32,7 @@ public abstract class AbstractTableBasedArea extends AbstactInformationArea{
 		setBorder(createTitledBorder);
 		
 		String[] columnNames = { "Item", "Value" };
-        String [][]tableVales={{"L","W"},{"O","ElegantJTable"},{"ElegantJTable","B3"},{"D","I"},{"","T"}};
+        String [][]tableVales={{"L","W"},{"O","A"},{"A","B3"},{"D","I"},{"","T"}};
         
         tableModel = new DefaultTableModel(tableVales,columnNames);
         table = new JTable(tableModel);  

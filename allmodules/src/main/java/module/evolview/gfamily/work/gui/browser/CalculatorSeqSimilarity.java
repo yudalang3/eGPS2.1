@@ -6,7 +6,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import egps2.utils.common.math.Tools;
 import module.evolview.gfamily.work.calculator.browser.LocationCalculator;
 import module.evolview.gfamily.work.calculator.similarityplot.ComparedSequenceResult;
 import module.evolview.gfamily.work.calculator.similarityplot.SimilarityPlotData;
@@ -57,7 +56,7 @@ public class CalculatorSeqSimilarity implements LocationCalculator<DrawingProper
                 AxisTicks<Integer> scaleX = new AxisTicks<>();
                 double xAxisLocation = xRange * (i - drawStart) + BLINK_LEFT_SPACE_LENGTH;
                 scaleX.setLine(new Line2D.Double(xAxisLocation, y, xAxisLocation, y + tick));
-                scaleX.setAxisValue(Tools.formatInteger(i));
+                scaleX.setAxisValue(i);
                 scaleX.setValueLocation(new Point2D.Double(xAxisLocation, height - tickAndScaleValueDist));
                 xAxisLocations.add(scaleX);
             }
@@ -80,7 +79,7 @@ public class CalculatorSeqSimilarity implements LocationCalculator<DrawingProper
         double xForXAxis = BLINK_LEFT_SPACE_LENGTH;
         AxisTicks<Double> scaleY = new AxisTicks<>();
         scaleY.setLine(new Line2D.Double(xForXAxis - tick, y, xForXAxis, y));
-        scaleY.setAxisValue(Tools.formatOneKeepTwoDecimal(0.0));
+        scaleY.setAxisValue(0.0);
         scaleY.setValueLocation(new Point2D.Double(xForXAxis - tick, y));
         yAxisLocations.add(scaleY);
         for (int i = tickNum; i < tickNum + 1; i++) {
@@ -89,7 +88,7 @@ public class CalculatorSeqSimilarity implements LocationCalculator<DrawingProper
             double y1 = y - per * (y - blinkTopSpaceLength);
             scaleY.setLine(new Line2D.Double(xForXAxis - tick, y1, xForXAxis, y1));
             // scaleY.setAxisValue(Tools.formatOneKeepTwoDecimal(per));
-            scaleY.setAxisValue(Tools.formatOneKeepTwoDecimal(maxScaleValueY / tickNum * i));
+            scaleY.setAxisValue(maxScaleValueY / tickNum * i);
             scaleY.setValueLocation(new Point2D.Double(xForXAxis - tick, y1));
             yAxisLocations.add(scaleY);
         }

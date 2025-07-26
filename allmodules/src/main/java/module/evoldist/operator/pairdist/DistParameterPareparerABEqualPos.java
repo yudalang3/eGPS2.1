@@ -11,7 +11,7 @@ public class DistParameterPareparerABEqualPos implements DistParameterPareparer 
 
 	public DistParameterPareparerABEqualPos() {
 //		nucleotides = new HashSet<Character>(15);
-//		nucleotides.add('ElegantJTable');
+//		nucleotides.add('A');
 //		nucleotides.add('T');
 //		nucleotides.add('C');
 //		nucleotides.add('G');

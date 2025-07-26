@@ -67,7 +67,7 @@ public class FeatureList extends LinkedList<GFF3Feature> {
 	 * file, then each group id identifies a particular gene, and this method
 	 * returns a collection of all gene ids.
 	 *
-	 * @return ElegantJTable collection (suitable for iteration using Java's "for" loop) of all
+	 * @return A collection (suitable for iteration using Java's "for" loop) of all
 	 *         the group ids found in this list. The order of the values is
 	 *         undefined; it will not match the order of features in the list.
 	 */
@@ -86,7 +86,7 @@ public class FeatureList extends LinkedList<GFF3Feature> {
 	 * GTF files, using the "gene_id" key will give the names of all the genes in
 	 * this list.
 	 *
-	 * @return ElegantJTable collection (suitable for iteration using Java's "for" loop) of all
+	 * @return A collection (suitable for iteration using Java's "for" loop) of all
 	 *         the values found for this key. The order of the values is undefined;
 	 *         it will not match the order of features in the list.
 	 */
@@ -105,7 +105,7 @@ public class FeatureList extends LinkedList<GFF3Feature> {
 	 * the group() method of the features.
 	 *
 	 * @param groupid The group to match.
-	 * @return ElegantJTable list of features having the specified group id.
+	 * @return A list of features having the specified group id.
 	 */
 	public FeatureList selectByGroup(String groupid) {
 		FeatureList list = new FeatureList();
@@ -124,7 +124,7 @@ public class FeatureList extends LinkedList<GFF3Feature> {
 	 * "CDS".
 	 *
 	 * @param type The type to match.
-	 * @return ElegantJTable list of features of the specified type.
+	 * @return A list of features of the specified type.
 	 */
 	public FeatureList selectByType(String type) {
 		FeatureList list = new FeatureList();
@@ -145,7 +145,7 @@ public class FeatureList extends LinkedList<GFF3Feature> {
 	 *
 	 * @param key   The key to consider.
 	 * @param value The value to consider.
-	 * @return ElegantJTable list of features that include the key/value pair.
+	 * @return A list of features that include the key/value pair.
 	 */
 	public FeatureList selectByAttribute(String key, String value) {
 		FeatureList list = new FeatureList();
@@ -161,7 +161,7 @@ public class FeatureList extends LinkedList<GFF3Feature> {
 	 * Create a list of all features that include the specified attribute key.
 	 *
 	 * @param key The key to consider.
-	 * @return ElegantJTable list of features that include the key.
+	 * @return A list of features that include the key.
 	 */
 	public FeatureList selectByAttribute(String key) {
 		FeatureList list = new FeatureList();
@@ -179,7 +179,7 @@ public class FeatureList extends LinkedList<GFF3Feature> {
 	 *
 	 * @param key   The key to consider.
 	 * @param value The value to consider.
-	 * @return ElegantJTable list of features that include the key/value pair.
+	 * @return A list of features that include the key/value pair.
 	 */
 	public FeatureList selectByUserData(String key, Object value) {
 		FeatureList list = new FeatureList();
@@ -197,7 +197,7 @@ public class FeatureList extends LinkedList<GFF3Feature> {
 	 * userMap().
 	 *
 	 * @param key The key to consider.
-	 * @return ElegantJTable list of features that include the key.
+	 * @return A list of features that include the key.
 	 */
 	public FeatureList selectByUserData(String key) {
 		FeatureList list = new FeatureList();
@@ -244,7 +244,7 @@ public class FeatureList extends LinkedList<GFF3Feature> {
 	/**
 	 * Return a string representation of all features in this list.
 	 *
-	 * @return ElegantJTable string.
+	 * @return A string.
 	 */
 	@Override
 	public String toString() {

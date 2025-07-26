@@ -6,7 +6,7 @@ package module.remnant.mafoperator.mafParser;
  * Title: MafLine
  * </p>
  * <p>
- * Description: ElegantJTable MAF line contains the data of one alignment in a MAF block
+ * Description: A MAF line contains the data of one alignment in a MAF block
  * e.g. the ref, start, stop, strand, ref length, aligned sequences, alignment
  * score, ...<br>
  * <br>

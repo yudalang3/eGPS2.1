@@ -150,7 +150,7 @@ package module.remnant.datapanel.data.validation;//package egps.remnant.datapane
 //	 * @Title: isTbiFileExist
 //	 * @Description:Check that the directory contains the corresponding tbi files
 //	 * @param filepath
-//	 *            ElegantJTable pathname string
+//	 *            A pathname string
 //	 * @return boolean
 //	 */
 //	public boolean isTbiFileExist(String filePath) {

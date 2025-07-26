@@ -1,7 +1,7 @@
 package module.evoldist.operator.pairdist;
 
 public class DistParameterLevel2 extends DistParameterLevel1 {
-	/** No. of ElegantJTable <-> G; No. of C <-> T */
+	/** No. of A <-> G; No. of C <-> T */
 	protected double numOfTransition;
 	
 	public DistParameterLevel2() {

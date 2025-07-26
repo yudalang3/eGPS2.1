@@ -16,10 +16,20 @@ import java.util.List;
 import java.util.Optional;
 
 /**
- * This is the high-level API for manipulating the EvolTree.
+ * High-level API for manipulating evolutionary trees (EvolTree).
+ * Provides methods to extract node information from phylogenetic trees in Newick format.
  */
 public class EvolTreeManipulator {
 
+	/**
+	 * Get node names from a phylogenetic tree file
+	 * @param tree_path Path to the tree file in Newick format
+	 * @param targetHTU Target internal node name to start search from (null for root)
+	 * @param getOTU Whether to include operational taxonomic units (leaf nodes)
+	 * @param getHTU Whether to include hierarchical taxonomic units (internal nodes)
+	 * @return Array of node names matching the criteria
+	 * @throws Exception If there's an error reading or parsing the tree file
+	 */
 	public String[] getNodeNames(String tree_path, String targetHTU, boolean getOTU, boolean getHTU) throws Exception {
 
 		PrimaryNodeTreeDecoder<DefaultPhyNode> treeCoder = new PrimaryNodeTreeDecoder<>(
@@ -62,6 +72,10 @@ public class EvolTreeManipulator {
 		return output.toArray(new String[0]);
 	}
 
+	/**
+	 * Get a string representation of this class
+	 * @return Class name with a greeting message
+	 */
 	public String getString() {
 		return "Hello, this is: ".concat(this.getClass().getName());
 	}

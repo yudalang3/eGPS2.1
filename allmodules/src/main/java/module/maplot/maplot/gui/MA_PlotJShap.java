@@ -57,7 +57,7 @@ public class MA_PlotJShap {
 				sb.append("<html><body>");
 				ValuePoint originalPoint = paintingPoint.getOriginalPoint();
 				sb.append("ID: ").append(originalPoint.getId()).append("<br/>");
-				sb.append("ElegantJTable value: ").append(originalPoint.getXValue()).append("<br/>");
+				sb.append("A value: ").append(originalPoint.getXValue()).append("<br/>");
 				sb.append("M value: ").append(originalPoint.getYValue()).append("<br/>");
 
 				Optional<Double> pValue = originalPoint.getPValue();

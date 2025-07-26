@@ -39,7 +39,7 @@ public class TreeDecoder {
 	public TreeDecoder() {}
 
 	/**
-	* ElegantJTable function parse a string like example to create a Node.
+	* A function parse a string like example to create a Node.
 	* @author yudalang
 	* @date 2018-7-26
 	* @param oneNode is a String like example
@@ -125,7 +125,7 @@ public class TreeDecoder {
 		oneNode = oneNode.replace(':', ' ');
 
 		if (!bsOnly) {
-			if (oneNode.contains("[")) { // deal with bootstrap value like this: (ElegantJTable:1.2,B:2.3):6.9[98]
+			if (oneNode.contains("[")) { // deal with bootstrap value like this: (A:1.2,B:2.3):6.9[98]
 				oneNode = bootstrapBehind(oneNode, node);
 			}
 			StringTokenizer tokenizer = new StringTokenizer(oneNode);
@@ -268,7 +268,7 @@ public class TreeDecoder {
 		oneNode = oneNode.replace(':', ' ');
 
 		if (!bsOnly) {
-			if (oneNode.contains("[")) { // deal with bootstrap value like this: (ElegantJTable:1.2,B:2.3):6.9[98]
+			if (oneNode.contains("[")) { // deal with bootstrap value like this: (A:1.2,B:2.3):6.9[98]
 				oneNode = bootstrapBehind(oneNode, node);
 			}
 			StringTokenizer tokenizer = new StringTokenizer(oneNode);

@@ -17,7 +17,7 @@ public class IndependentModuleLoader implements IModuleLoader{
 
 	@Override
 	public String getShortDescription() {
-		return "ElegantJTable user-friendly tool for drawing Sankey plot.";
+		return "A user-friendly tool for drawing Sankey plot.";
 	}
 
 	@Override

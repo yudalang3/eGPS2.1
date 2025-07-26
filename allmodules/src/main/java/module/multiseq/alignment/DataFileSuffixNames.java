@@ -3,7 +3,7 @@ package module.multiseq.alignment;
 /**
  * 
 * <p>Title: DataFileSuffixNames</p>  
-* <p>Description: ElegantJTable class to store input file suffix names regular expressions</p>
+* <p>Description: A class to store input file suffix names regular expressions</p>
 * @author yudalang  
 * @date 2019-2-27
 * @see https://stackoverflow.com/questions/10205437/compare-one-string-with-multiple-values-in-one-expression

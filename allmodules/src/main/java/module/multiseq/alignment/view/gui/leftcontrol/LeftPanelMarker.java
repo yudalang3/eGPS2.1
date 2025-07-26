@@ -67,7 +67,7 @@ public class LeftPanelMarker extends JPanel {
 
 		JLabel label_1 = new JLabel("");
 		label_1.setToolTipText(
-				"<html><body>ElegantJTable.k.a mark row of interest.<br>\r\nNote: click \"Search and mark\" button to initialize marking.<br>\r\nUncheck the checkbox to un-mark the row or column.");
+				"<html><body>A.k.a mark row of interest.<br>\r\nNote: click \"Search and mark\" button to initialize marking.<br>\r\nUncheck the checkbox to un-mark the row or column.");
 		label_1.setIcon(EGPSShellIcons.getHelpIcon());
 		GridBagConstraints gbc_label_1 = new GridBagConstraints();
 		gbc_label_1.fill = GridBagConstraints.HORIZONTAL;
@@ -102,7 +102,7 @@ public class LeftPanelMarker extends JPanel {
 
 		JLabel label = new JLabel("");
 		label.setToolTipText(
-				"<html><body>ElegantJTable.k.a mark column of interest.<br>\r\nThe number you input is relative to <b>non-gap</b> order.<br>\r\nNote: click \"Search and mark\" button to initialize marking.<br>\r\nUncheck the checkbox to un-mark the row or column.<br>");
+				"<html><body>A.k.a mark column of interest.<br>\r\nThe number you input is relative to <b>non-gap</b> order.<br>\r\nNote: click \"Search and mark\" button to initialize marking.<br>\r\nUncheck the checkbox to un-mark the row or column.<br>");
 		label.setIcon(EGPSShellIcons.get("help_blue.png"));
 		GridBagConstraints gbc_label = new GridBagConstraints();
 		gbc_label.fill = GridBagConstraints.HORIZONTAL;

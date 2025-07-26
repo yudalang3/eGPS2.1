@@ -13,7 +13,7 @@ public class IndependentModuleLoader implements IModuleLoader{
 
 	@Override
 	public String getShortDescription() {
-		return "ElegantJTable primary skeleton scatter plot to show the ability of visulization computation.";
+		return "A primary skeleton scatter plot to show the ability of visualization computation.";
 	}
 
 

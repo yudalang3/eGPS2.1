@@ -54,7 +54,7 @@ public class MA_PanelMouseListener extends MouseAdapter {
 		
 		ValuePoint originalPoint = paintingPoint.getOriginalPoint();
 		sb.append("ID: ").append(originalPoint.getId()).append("\n");
-		sb.append("ElegantJTable value: ").append(originalPoint.getXValue()).append("\n");
+		sb.append("A value: ").append(originalPoint.getXValue()).append("\n");
 		sb.append("M value: ").append(originalPoint.getYValue()).append("\n");
 		
 		List<String> headerFields = model.getHeaderFields();

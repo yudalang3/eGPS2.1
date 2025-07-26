@@ -5,13 +5,7 @@ import java.util.function.Supplier;
 
 public enum SequenceBaseColor4AAProperties {
 
-//	ElegantJTable("ElegantJTable", () -> new Color(100, 247, 63)), C("C", () -> new Color(255, 179, 64)), G("G", () -> new Color(240, 62, 57)),
-//	T("T", () -> new Color(86, 128, 184)), U("U", () -> new Color(60, 136, 238)), OTHES("OTHES", () -> Color.white);
-
-//	ElegantJTable("ElegantJTable", () -> new Color(254, 109, 109)), C("C", () -> new Color(116, 206, 112)), G("G", () -> new Color(242, 190, 60)),
-//	T("T", () -> new Color(118, 156, 203)), U("U", () -> new Color(60, 136, 238)), OTHES("OTHES", () -> Color.white);
-
-	A("ElegantJTable", () -> new Color(255, 255, 255)), C("C", () -> new Color(165, 165, 165)),
+	A("A", () -> new Color(255, 255, 255)), C("C", () -> new Color(165, 165, 165)),
 	D("D", () -> new Color(116, 206, 112)), E("E", () -> new Color(116, 206, 112)),
 	F("F", () -> new Color(255, 255, 255)), G("G", () -> new Color(165, 165, 165)),
 	H("H", () -> new Color(60, 136, 238)), I("I", () -> new Color(255, 255, 255)),
@@ -42,10 +36,8 @@ public enum SequenceBaseColor4AAProperties {
 
 	public static Color getBaseColor(String base) {
 		switch (base.toUpperCase()) {
-		case "ElegantJTable":
+		case "A":
 			return A.getColor();
-//            case "B":
-//                return B.getColor();
 		case "C":
 			return C.getColor();
 		case "D":
@@ -60,8 +52,6 @@ public enum SequenceBaseColor4AAProperties {
 			return H.getColor();
 		case "I":
 			return I.getColor();
-//            case "J":
-//                return J.getColor();
 		case "K":
 			return K.getColor();
 		case "L":
@@ -70,8 +60,6 @@ public enum SequenceBaseColor4AAProperties {
 			return M.getColor();
 		case "N":
 			return N.getColor();
-//            case "O":
-//                return O.getColor();
 		case "P":
 			return P.getColor();
 		case "Q":
@@ -88,12 +76,8 @@ public enum SequenceBaseColor4AAProperties {
 			return V.getColor();
 		case "W":
 			return W.getColor();
-//            case "X":
-//                return X.getColor();
 		case "Y":
 			return Y.getColor();
-//            case "Z":
-//                return Z.getColor();
 		case "*":
 			return STORP.getColor();
 		default:

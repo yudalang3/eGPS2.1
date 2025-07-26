@@ -29,7 +29,7 @@ public class LogDetTamuraKumar<E extends DistParameterLevel51> implements EvoPai
 		// 0 1
 		double fAG = g1s[0] * g2s[1] + g1s[1] * g2s[0];
 		double fTC = g1s[2] * g2s[3] + g1s[3] * g2s[2];
-		// R = ElegantJTable + G; Y = T + C;
+		// R = A + G; Y = T + C;
 		double fRY = 0;
 		for (int i = 0; i < 2; i++) {
 			for (int j = 2; j < 4; j++) {

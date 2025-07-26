@@ -15,7 +15,7 @@ public class IndependentModuleLoader implements IModuleLoader{
 
 	@Override
 	public String getShortDescription() {
-		return "ElegantJTable convenient remnant for drawing sequence logo.";
+		return "A convenient remnant for drawing sequence logo.";
 	}
 
 

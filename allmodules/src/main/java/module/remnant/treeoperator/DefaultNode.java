@@ -15,7 +15,7 @@ import java.util.Set;
  * 
  * <pre>
  * Description:  Nodes are building blocks for trees, which can be either
- * species tree or coalescent tree. ElegantJTable tree always have a root, regardless how
+ * species tree or coalescent tree. A tree always have a root, regardless how
  * the tree is drawn. The essential properties of a node in a tree are 
  * (1) its parent 
  * (2) its child 

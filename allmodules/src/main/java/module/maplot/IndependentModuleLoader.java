@@ -17,7 +17,7 @@ public class IndependentModuleLoader implements IModuleLoader{
 
 	@Override
 	public String getShortDescription() {
-		return "ElegantJTable Convenient remnant to draw the MA plot.";
+		return "A Convenient remnant to draw the MA plot.";
 	}
 
 	@Override

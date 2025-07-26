@@ -26,7 +26,7 @@ public class IndependentModuleLoader extends DIYToolModuleFace {
 
 	@Override
 	public String getShortDescription() {
-		return "ElegantJTable convenient graphic tool to find target lines as the Linux command grep.";
+		return "A convenient graphic tool to find target lines as the Linux command grep.";
 	}
 
 
