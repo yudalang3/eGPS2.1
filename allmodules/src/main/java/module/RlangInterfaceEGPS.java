@@ -22,7 +22,7 @@ import module.evolview.moderntreeviewer.IndependentModuleLoader;
  * @author yudal
  *
  */
-public class RlangInferfaceEGPS {
+public class RlangInterfaceEGPS {
 
 	/**
 	 * 启动
@@ -31,9 +31,9 @@ public class RlangInferfaceEGPS {
 	 * @throws Exception
 	 */
 	public String launch() throws Exception {
-		Launcher4Dev.main(null);
+		Launcher4Dev.main(new String[]{});
 		Launcher.isLaunchFromR = true;
-		return "Hello this is eGPS for R, version: ".concat(EGPSProperties.EGPS_VERSION);
+		return "Hello this is eGPS desktop, version: ".concat(EGPSProperties.EGPS_VERSION);
 	}
 
 	/**
