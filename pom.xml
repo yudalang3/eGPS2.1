@@ -11,10 +11,8 @@
 
     <name>parent</name>
     <modules>
-        <module>mainframe</module>
         <module>allmodules</module>
         <module>ydl.lab.utils</module>
-        <module>wntevol</module>
     </modules>
 
     <properties>
