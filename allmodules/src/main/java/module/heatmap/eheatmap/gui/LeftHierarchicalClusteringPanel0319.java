@@ -22,11 +22,11 @@ import egps2.UnifiedAccessPoint;
 import module.heatmap.EheatmapMain;
 import module.heatmap.eheatmap.HeatmapController;
 import module.heatmap.eheatmap.model.ParameterModel;
-import module.heatmap.eheatmap.model.dist.AvgDotProduct;
-import module.heatmap.eheatmap.model.dist.EuclideanDist;
-import module.heatmap.eheatmap.model.dist.ManhattanDist;
-import module.heatmap.eheatmap.model.dist.PearsonsCor;
-import module.heatmap.eheatmap.model.dist.SpearmansCor;
+import module.heatmap.eheatmap.model.distance.AvgDotProduct;
+import module.heatmap.eheatmap.model.distance.EuclideanDist;
+import module.heatmap.eheatmap.model.distance.ManhattanDist;
+import module.heatmap.eheatmap.model.distance.PearsonsCor;
+import module.heatmap.eheatmap.model.distance.SpearmansCor;
 import module.heatmap.eheatmap.tree.ClusterParameter;
 import egps2.panels.reusablecom.ParameterInitialized;
 

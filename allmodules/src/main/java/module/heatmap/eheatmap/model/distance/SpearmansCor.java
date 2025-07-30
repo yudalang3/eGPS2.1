@@ -1,4 +1,4 @@
-package module.heatmap.eheatmap.model.dist;
+package module.heatmap.eheatmap.model.distance;
 
 import org.apache.commons.math3.stat.correlation.SpearmansCorrelation;
 

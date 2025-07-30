@@ -12,6 +12,7 @@ import java.awt.event.WindowEvent;
 import java.io.File;
 import java.util.Map;
 import java.util.Optional;
+import java.util.Scanner;
 
 public class EGPSGuiUtil {
 
@@ -75,6 +76,27 @@ public class EGPSGuiUtil {
         } else {
             Rectangle object = (Rectangle) objectByObjectInput;
             return Optional.of(object);
+        }
+    }
+
+
+    /**
+     * The difference is that this is the command line interface
+     * @param buttonAction the action to do when user enter t
+     */
+    public static void universalSimplestCLIIDE(Runnable buttonAction) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Command line: q to exit; t for trigger the re-start");
+        while (true) {
+            System.out.print("> ");
+            if (scanner.hasNextLine()) {
+                String command = scanner.nextLine().trim();
+                if (command.startsWith("t")) {
+                    buttonAction.run();
+                } else if (command.startsWith("q")) {
+                    break;
+                }
+            }
         }
     }
 }

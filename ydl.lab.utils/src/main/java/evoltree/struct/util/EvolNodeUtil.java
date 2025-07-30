@@ -352,7 +352,6 @@ public class EvolNodeUtil {
         for (int i = 0; i < newLength; i++) {
             ret[i] = (T) node.getChildAt(i);
         }
-
         return ret;
     }
 

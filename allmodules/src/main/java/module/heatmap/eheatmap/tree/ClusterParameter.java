@@ -3,7 +3,7 @@ package module.heatmap.eheatmap.tree;
 import java.awt.Color;
 
 import module.heatmap.eheatmap.model.PairwiseDistance;
-import module.heatmap.eheatmap.model.dist.AvgDotProduct;
+import module.heatmap.eheatmap.model.distance.AvgDotProduct;
 import module.heatmap.eheatmap.tree.cluster.HClustering;
 
 public class ClusterParameter implements Cloneable{
