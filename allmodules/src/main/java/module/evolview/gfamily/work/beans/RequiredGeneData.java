@@ -15,7 +15,7 @@ import org.apache.commons.io.FileUtils;
 import module.evolview.gfamily.work.gui.browser.draw.DrawingPropertyPrimerSet;
 import module.evolview.gfamily.work.gui.browser.draw.DrawingPropertySequenceModel;
 import module.evolview.gfamily.work.gui.browser.draw.GeneStructureInfo;
-import module.evolview.gfamily.work.model.AlignmentGetSequence;
+import module.evolview.model.AlignmentGetSequence;
 
 public class RequiredGeneData {
 

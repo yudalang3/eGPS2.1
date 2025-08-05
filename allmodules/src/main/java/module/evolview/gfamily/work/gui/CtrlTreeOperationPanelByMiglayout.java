@@ -30,10 +30,10 @@ import egps2.builtin.modules.IconObtainer;
 import module.evolview.gfamily.work.gui.browser.BaseCtrlPanel;
 import module.evolview.gfamily.work.gui.dialog.SeachDialog;
 import module.evolview.gfamily.work.gui.tree.PhylogeneticTreePanel;
-import module.evolview.gfamily.work.model.tree.GraphicsNode;
+import module.evolview.model.tree.GraphicsNode;
 import module.evolview.phylotree.visualization.graphics.struct.ShowInnerNodePropertiesInfo;
 import module.evolview.phylotree.visualization.graphics.struct.ShowLeafPropertiesInfo;
-import module.evolview.gfamily.work.model.tree.TreeLayoutProperties;
+import module.evolview.model.tree.TreeLayoutProperties;
 import graphic.engine.guirelated.JFontChooser;
 
 @SuppressWarnings("serial")

@@ -4,7 +4,7 @@ import java.awt.Color;
 import java.awt.Graphics2D;
 import java.util.List;
 
-import module.evolview.gfamily.work.model.tree.GraphicsNode;
+import module.evolview.model.tree.GraphicsNode;
 import module.evolview.phylotree.visualization.graphics.struct.util.GraphicTreePropertyCalculator;
 
 public class DrawPropLeafNameAnno extends AnnotationRender{

@@ -13,7 +13,7 @@ import evoltree.struct.util.EvolNodeUtil;
 import evoltree.phylogeny.DefaultPhyNode;
 import evoltree.struct.ArrayBasedNode;
 import evoltree.struct.EvolNode;
-import module.evolview.gfamily.work.model.tree.GraphicsNode;
+import module.evolview.model.tree.GraphicsNode;
 
 public class NodeUtils {
 	public static GraphicsNode convertBasicNode2graphicsNode(EvolNode node) {

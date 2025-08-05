@@ -14,7 +14,7 @@ import module.evolview.gfamily.work.gui.tree.control.SubRectangularLayout;
 import module.evolview.gfamily.work.gui.tree.control.SubSlopeLayout;
 import module.evolview.gfamily.work.gui.tree.control.SubSprialLayout;
 import module.evolview.phylotree.visualization.graphics.struct.TreeLayout;
-import module.evolview.gfamily.work.model.enums.TreeLayoutEnum;
+import module.evolview.model.enums.TreeLayoutEnum;
 
 @SuppressWarnings("serial")
 public class CtrlTreeLayoutPanel extends BaseCtrlPanel {

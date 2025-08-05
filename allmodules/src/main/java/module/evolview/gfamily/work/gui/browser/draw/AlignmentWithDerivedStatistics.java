@@ -6,7 +6,7 @@ import java.util.Optional;
 
 import module.evolview.gfamily.work.calculator.similarityplot.ComparedSequenceResult;
 import module.evolview.gfamily.work.calculator.similarityplot.SimilarityPlotData;
-import module.evolview.gfamily.work.model.AlignmentGetSequence;
+import module.evolview.model.AlignmentGetSequence;
 
 /**
  * Derived statistics

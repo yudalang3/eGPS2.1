@@ -18,7 +18,7 @@ import javax.swing.SpinnerNumberModel;
 import module.evolview.gfamily.work.gui.browser.BaseCtrlPanel;
 import module.evolview.gfamily.work.gui.tree.PhylogeneticTreePanel;
 import module.evolview.phylotree.visualization.graphics.struct.TreeLayout;
-import module.evolview.gfamily.work.model.enums.TreeLayoutEnum;
+import module.evolview.model.enums.TreeLayoutEnum;
 
 @SuppressWarnings("serial")
 public class SubRadicalLayout extends BaseCtrlPanel implements Turn2ThisLayoutPanel {

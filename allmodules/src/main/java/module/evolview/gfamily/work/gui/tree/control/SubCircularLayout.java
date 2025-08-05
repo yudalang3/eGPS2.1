@@ -22,8 +22,8 @@ import javax.swing.event.ChangeListener;
 import module.evolview.gfamily.work.gui.browser.BaseCtrlPanel;
 import module.evolview.gfamily.work.gui.tree.PhylogeneticTreePanel;
 import module.evolview.phylotree.visualization.graphics.struct.TreeLayout;
-import module.evolview.gfamily.work.model.enums.TreeLayoutEnum;
-import module.evolview.gfamily.work.model.tree.TreeLayoutProperties;
+import module.evolview.model.enums.TreeLayoutEnum;
+import module.evolview.model.tree.TreeLayoutProperties;
 
 @SuppressWarnings("serial")
 public class SubCircularLayout extends BaseCtrlPanel implements Turn2ThisLayoutPanel,ItemListener {

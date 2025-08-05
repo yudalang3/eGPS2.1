@@ -34,10 +34,10 @@ import module.evolview.gfamily.work.gui.ScaleBarRectObject;
 import module.evolview.phylotree.visualization.graphics.large.interactive.TreePopupMenu;
 import module.evolview.gfamily.work.gui.tree.PhylogeneticTreePanel;
 import module.evolview.gfamily.work.gui.tree.RectObj;
-import module.evolview.gfamily.work.model.tree.GraphicsNode;
-import module.evolview.gfamily.work.model.tree.ScaleBarProperty;
+import module.evolview.model.tree.GraphicsNode;
+import module.evolview.model.tree.ScaleBarProperty;
 import evoltree.txtdisplay.TreeDrawUnit;
-import module.evolview.gfamily.work.model.tree.TreeLayoutProperties;
+import module.evolview.model.tree.TreeLayoutProperties;
 import module.evolview.phylotree.visualization.graphics.struct.TreeDecideUtil;
 
 public class TreeListener extends MouseAdapter implements KeyListener {

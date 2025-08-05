@@ -4,8 +4,8 @@ import java.util.Optional;
 
 import module.evolview.gfamily.GeneFamilyMainFace;
 import module.evolview.gfamily.work.beans.RequiredGeneData;
-import module.evolview.gfamily.work.model.tree.GraphicsNode;
-import module.evolview.gfamily.work.model.tree.TreeLayoutProperties;
+import module.evolview.model.tree.GraphicsNode;
+import module.evolview.model.tree.TreeLayoutProperties;
 import module.evolview.moderntreeviewer.io.MTVImportInforBean;
 import module.evolview.moderntreeviewer.io.TreeParser4MTV;
 import module.evolview.moderntreeviewer.io.TreePropertiesAssigner;

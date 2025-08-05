@@ -3,8 +3,8 @@ package module.evolview.moderntreeviewer;
 import java.io.InputStream;
 
 import egps2.frame.ModuleFace;
-import module.evolview.gfamily.work.model.tree.GraphicsNode;
-import module.evolview.gfamily.work.model.tree.TreeLayoutProperties;
+import module.evolview.model.tree.GraphicsNode;
+import module.evolview.model.tree.TreeLayoutProperties;
 import egps2.modulei.IModuleLoader;
 import egps2.modulei.IconBean;
 import egps2.modulei.ModuleClassification;

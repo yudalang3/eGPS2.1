@@ -3,7 +3,7 @@ package module.evolview.phylotree.visualization.graphics.struct.util;
 import java.util.ArrayList;
 import java.util.List;
 
-import module.evolview.gfamily.work.model.tree.GraphicsNode;
+import module.evolview.model.tree.GraphicsNode;
 import evoltree.struct.util.EvolTreeOperator;
 import module.evolview.phylotree.visualization.graphics.struct.NodeType;
 import module.evolview.phylotree.visualization.graphics.struct.TreeDecideUtil;

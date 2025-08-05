@@ -1,4 +1,4 @@
-package module.evolview.gfamily.work.model.tree;
+package module.evolview.model.tree;
 
 import java.util.Objects;
 
@@ -16,7 +16,7 @@ import evoltree.struct.ArrayBasedNode;
  * 
  * DispalyedLength和 realLength的设计是因为有很多布局是变一变枝长就行了的。例如 equal length与align to tip
  */
-public class GraphicsNode extends Node4BasicNCov19 {
+public class GraphicsNode extends NodeWithCGBID {
 
 	private double x1 = 0.0;
 	private double x2 = 0.0;

@@ -2,7 +2,7 @@ package module.evolview.gfamily.work.gui.tree.annotation;
 
 import java.awt.Graphics2D;
 
-import module.evolview.gfamily.work.model.tree.GraphicsNode;
+import module.evolview.model.tree.GraphicsNode;
 
 /**
  * 这里其实应该有两个过程：

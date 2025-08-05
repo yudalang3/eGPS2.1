@@ -19,7 +19,7 @@ import utils.EGPSObjectsUtil;
 import egps2.EGPSProperties;
 import module.evolview.gfamily.GeneFamilyController;
 import module.evolview.gfamily.work.beans.LefControlPanelCollapseProperties;
-import module.evolview.gfamily.work.model.enums.ColorScheme;
+import module.evolview.model.enums.ColorScheme;
 
 @SuppressWarnings("serial")
 public class ControlPanelContainner extends JPanel {

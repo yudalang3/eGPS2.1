@@ -11,8 +11,8 @@ import java.util.List;
 
 import egps2.utils.common.model.datatransfer.TwoTuple;
 import module.evolview.gfamily.work.gui.tree.TreeOperationUtil;
-import module.evolview.gfamily.work.model.tree.GraphicsNode;
-import module.evolview.gfamily.work.model.tree.TreeLayoutProperties;
+import module.evolview.model.tree.GraphicsNode;
+import module.evolview.model.tree.TreeLayoutProperties;
 
 public class DrawUtil {
 

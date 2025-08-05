@@ -36,10 +36,10 @@ import module.evolview.gfamily.work.NodeUtils;
 import module.evolview.gfamily.work.gui.tree.CollapseDialog;
 import module.evolview.gfamily.work.gui.tree.PhylogeneticTreePanel;
 import module.evolview.gfamily.work.gui.tree.TreeOperationUtil;
-import module.evolview.gfamily.work.model.enums.BranchLengthType;
-import module.evolview.gfamily.work.model.tree.GraphicsNode;
+import module.evolview.model.enums.BranchLengthType;
+import module.evolview.model.tree.GraphicsNode;
 import evoltree.txtdisplay.TreeDrawUnit;
-import module.evolview.gfamily.work.model.tree.TreeLayoutProperties;
+import module.evolview.model.tree.TreeLayoutProperties;
 import module.evolview.phylotree.visualization.layout.BaseLayout;
 import egps2.frame.gui.dialog.DialogMoreInfoGenerator;
 

@@ -17,7 +17,7 @@ import module.evolview.gfamily.work.gui.browser.TrackKeyDomains;
 import module.evolview.gfamily.work.gui.browser.TrackPrimers;
 import module.evolview.gfamily.work.gui.browser.draw.AlignmentWithDerivedStatistics;
 import module.evolview.gfamily.work.gui.browser.draw.DrawingPropertyPrimerSet;
-import module.evolview.gfamily.work.model.AlignmentGetSequence;
+import module.evolview.model.AlignmentGetSequence;
 
 @SuppressWarnings("serial")
 public class GBBrowserPanel extends BrowserPanel {

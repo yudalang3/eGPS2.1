@@ -28,12 +28,12 @@ import module.evolview.gfamily.work.gui.tree.annotation.DrawPropInternalNode2Lea
 import module.evolview.gfamily.work.gui.tree.annotation.DrawPropInternalNodeInsituAnno;
 import module.evolview.gfamily.work.gui.tree.annotation.DrawPropLeafNameAnno;
 import module.evolview.gfamily.work.gui.tree.annotation.DrawPropOutterSidewardAnno;
-import module.evolview.gfamily.work.model.enums.BranchLengthType;
-import module.evolview.gfamily.work.model.enums.ColorScheme;
-import module.evolview.gfamily.work.model.tree.AnnotationsProperties;
-import module.evolview.gfamily.work.model.tree.GraphicsNode;
+import module.evolview.model.enums.BranchLengthType;
+import module.evolview.model.enums.ColorScheme;
+import module.evolview.model.tree.AnnotationsProperties;
+import module.evolview.model.tree.GraphicsNode;
 import module.evolview.phylotree.visualization.graphics.struct.ShowLeafPropertiesInfo;
-import module.evolview.gfamily.work.model.tree.TreeLayoutProperties;
+import module.evolview.model.tree.TreeLayoutProperties;
 import module.evolview.phylotree.visualization.layout.BaseLayout;
 
 public class GeneFamilyController {

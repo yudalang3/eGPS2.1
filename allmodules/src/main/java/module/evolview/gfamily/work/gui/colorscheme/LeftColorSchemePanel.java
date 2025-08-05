@@ -20,7 +20,7 @@ import javax.swing.border.EmptyBorder;
 import egps2.UnifiedAccessPoint;
 import module.evolview.gfamily.GeneFamilyController;
 import egps2.builtin.modules.IconObtainer;
-import module.evolview.gfamily.work.model.enums.ColorScheme;
+import module.evolview.model.enums.ColorScheme;
 
 /**
  * 

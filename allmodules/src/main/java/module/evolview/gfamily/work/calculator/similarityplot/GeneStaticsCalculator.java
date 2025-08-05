@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import phylo.msa.util.EvolutionaryProperties;
-import module.evolview.gfamily.work.model.AlignmentGetSequence;
+import module.evolview.model.AlignmentGetSequence;
 import msaoperator.alignment.sequence.SequenceI;
 
 public class GeneStaticsCalculator {

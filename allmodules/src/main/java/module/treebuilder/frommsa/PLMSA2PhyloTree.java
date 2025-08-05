@@ -6,7 +6,7 @@ import egps2.panels.dialog.SwingDialog;
 import module.remnant.treeoperator.AbstructBuildDMTreePipe;
 import module.remnant.treeoperator.NodeEGPSv1;
 import egps2.frame.MainFrameProperties;
-import module.evolview.gfamily.work.model.tree.GraphicsNode;
+import module.evolview.model.tree.GraphicsNode;
 import module.evolview.moderntreeviewer.IndependentModuleLoader;
 
 public class PLMSA2PhyloTree extends AbstructBuildDMTreePipe {

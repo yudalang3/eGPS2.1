@@ -3,7 +3,7 @@ package module.evolview.gfamily.work.gui.render;
 import java.awt.Color;
 
 import module.evolview.gfamily.work.gui.tree.TreeOperationUtil;
-import module.evolview.gfamily.work.model.tree.GraphicsNode;
+import module.evolview.model.tree.GraphicsNode;
 
 public class NoColorRender implements ColorRander {
 

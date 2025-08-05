@@ -16,7 +16,7 @@ import java.util.Map;
 import egps2.panels.dialog.SwingDialog;
 import module.remnant.treeoperator.NodeEGPSv1;
 import egps2.frame.MainFrameProperties;
-import module.evolview.gfamily.work.model.tree.GraphicsNode;
+import module.evolview.model.tree.GraphicsNode;
 import module.evolview.moderntreeviewer.IndependentModuleLoader;
 import msaoperator.alignment.sequence.BasicSequenceData;
 import msaoperator.io.MSAFileParser;

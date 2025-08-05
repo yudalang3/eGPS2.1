@@ -41,9 +41,9 @@ import egps2.frame.ModuleFace;
 import module.evolview.gfamily.work.gui.CtrlTreeLayoutPanel;
 import module.evolview.gfamily.work.gui.CtrlTreeOperationPanelByMiglayout;
 import module.evolview.gfamily.work.gui.tree.PhylogeneticTreePanel;
-import module.evolview.gfamily.work.model.tree.GraphicsNode;
+import module.evolview.model.tree.GraphicsNode;
 import module.evolview.phylotree.visualization.graphics.struct.ShowLeafPropertiesInfo;
-import module.evolview.gfamily.work.model.tree.TreeLayoutProperties;
+import module.evolview.model.tree.TreeLayoutProperties;
 import egps2.frame.gui.EGPSMainGuiUtil;
 import module.evolview.moderntreeviewer.gui.CreativeModeTaskPanel;
 import module.evolview.phylotree.visualization.graphics.struct.AdvancedParametersBean;
@@ -326,7 +326,7 @@ public class MTreeViewMainFace extends ModuleFace implements AdjusterFillAndLine
 
 		Optional<IModuleLoader> moduleLoaderOpt = getModuleLoader();
 		if (!moduleLoaderOpt.isPresent()) {
-			throw new InputMismatchException("No remnant loader, please check by the developer.");
+			throw new InputMismatchException("No module loader, please check by the developer.");
 		}
 
 		IndependentModuleLoader moduleLoader2 = (IndependentModuleLoader) moduleLoaderOpt.get();
@@ -345,19 +345,22 @@ public class MTreeViewMainFace extends ModuleFace implements AdjusterFillAndLine
 			this.scrollPane.setViewportView(jPanel);
 		} else {
 
-			// 这个导入过程，如果更改需要注意三处：VOICM4MTV类的execute()；GeneFamilyMainFace类的initialize和MTreeViewMainFace的initializeGraphics()
+			// 这个导入过程，如果更改需要注意三处：
+			// VOICM4MTV类的execute()；
+			// GeneFamilyMainFace类的initialize
+			// 和MTreeViewMainFace的initializeGraphics()
 			TreeLayoutProperties treeLayoutProperties = moduleLoader2.treeLayoutProperties;
 			if (treeLayoutProperties == null) {
 				treeLayoutProperties = new TreeLayoutProperties(rootNode);
-				ShowLeafPropertiesInfo showLeafPropertiesInfo = treeLayoutProperties.getShowLeafPropertiesInfo();
-				boolean isShowLeafLabel = false;
-				if (isShowLeafLabel) {
-					showLeafPropertiesInfo.setNeedChange4showLabel(true);
-					showLeafPropertiesInfo.setNeedChange4hideLabel(false);
-				} else {
-					showLeafPropertiesInfo.setNeedChange4showLabel(false);
-					showLeafPropertiesInfo.setNeedChange4hideLabel(false);
-				}
+			}
+			ShowLeafPropertiesInfo showLeafPropertiesInfo = treeLayoutProperties.getShowLeafPropertiesInfo();
+			boolean isShowLeafLabel = false;
+			if (isShowLeafLabel) {
+				showLeafPropertiesInfo.setNeedChange4showLabel(true);
+				showLeafPropertiesInfo.setNeedChange4hideLabel(false);
+			} else {
+				showLeafPropertiesInfo.setNeedChange4showLabel(false);
+				showLeafPropertiesInfo.setNeedChange4hideLabel(false);
 			}
 
 			creativeModeTaskPanel.setTreeLayoutProperties(treeLayoutProperties);
@@ -377,7 +380,7 @@ public class MTreeViewMainFace extends ModuleFace implements AdjusterFillAndLine
 				this.phylogeneticTreePanel = new PhylogeneticTreePanel(treeLayoutProperties, convertNode, null, null);
 				this.creativeModeTaskPanel.setTreeLayoutProperties(treeLayoutProperties);
 				this.controller.setTreeLayoutProperties(treeLayoutProperties);
-				// 要把原来的移除，再新增
+				// Remove the original one before add
 				JViewport viewport = MTreeViewMainFace.this.scrollPane.getViewport();
 				viewport.removeAll();
 				viewport.add(MTreeViewMainFace.this.phylogeneticTreePanel);

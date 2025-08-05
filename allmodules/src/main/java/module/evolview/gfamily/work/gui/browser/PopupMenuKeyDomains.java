@@ -13,7 +13,7 @@ import javax.swing.JTextArea;
 
 import egps2.panels.dialog.SwingDialog;
 import module.evolview.gfamily.work.gui.browser.draw.DrawingPropertyElement;
-import module.evolview.gfamily.work.model.AlignmentGetSequence;
+import module.evolview.model.AlignmentGetSequence;
 import msaoperator.alignment.sequence.SequenceI;
 
 /**

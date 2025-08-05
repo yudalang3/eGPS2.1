@@ -1,4 +1,4 @@
-package module.evolview.gfamily.work.model.tree;
+package module.evolview.model.tree;
 
 import java.awt.Color;
 import java.awt.Font;

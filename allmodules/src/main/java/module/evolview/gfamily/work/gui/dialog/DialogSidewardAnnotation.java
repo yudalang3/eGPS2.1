@@ -27,8 +27,8 @@ import egps2.UnifiedAccessPoint;
 import module.evolview.gfamily.work.gui.tree.PhylogeneticTreePanel;
 import module.evolview.gfamily.work.gui.tree.annotation.DrawPropOutterSidewardAnno;
 import module.evolview.gfamily.work.gui.tree.annotation.SidewardNodeAnnotation;
-import module.evolview.gfamily.work.model.tree.AnnotationsProperties;
-import module.evolview.gfamily.work.model.tree.GraphicsNode;
+import module.evolview.model.tree.AnnotationsProperties;
+import module.evolview.model.tree.GraphicsNode;
 
 @SuppressWarnings("serial")
 public class DialogSidewardAnnotation extends AbstarctShowAnnotationDialog {

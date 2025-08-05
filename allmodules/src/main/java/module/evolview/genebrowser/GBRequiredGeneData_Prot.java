@@ -33,7 +33,7 @@ import module.evolview.gfamily.work.beans.TrackMultipleDomainBean;
 import module.evolview.gfamily.work.gui.browser.draw.DrawingPropertyElement;
 import module.evolview.gfamily.work.gui.browser.draw.DrawingPropertySequenceModel;
 import module.evolview.gfamily.work.gui.browser.draw.GeneStructureInfo;
-import module.evolview.gfamily.work.model.AlignmentGetSequence;
+import module.evolview.model.AlignmentGetSequence;
 import graphic.engine.colors.EGPSColors;
 import msaoperator.alignment.sequence.Sequence;
 import rest.ensembl.ensembrest.OverlapTransBeanParser;

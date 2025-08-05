@@ -26,8 +26,8 @@ import egps2.UnifiedAccessPoint;
 import module.evolview.gfamily.work.gui.tree.PhylogeneticTreePanel;
 import module.evolview.gfamily.work.gui.tree.annotation.CommonShape;
 import module.evolview.gfamily.work.gui.tree.annotation.DrawPropInternalNodeInsituAnno;
-import module.evolview.gfamily.work.model.tree.AnnotationsProperties;
-import module.evolview.gfamily.work.model.tree.GraphicsNode;
+import module.evolview.model.tree.AnnotationsProperties;
+import module.evolview.model.tree.GraphicsNode;
 
 @SuppressWarnings("serial")
 public class DialogInternalNodeInsituAnnotation extends AbstarctShowAnnotationDialog {

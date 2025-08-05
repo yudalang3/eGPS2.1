@@ -7,7 +7,7 @@ import java.awt.Rectangle;
 import java.awt.Shape;
 
 import egps2.UnifiedAccessPoint;
-import module.evolview.gfamily.work.model.tree.GraphicsNode;
+import module.evolview.model.tree.GraphicsNode;
 
 public class DrawPropInternalNode2LeafAnno extends AnnotationRender {
 

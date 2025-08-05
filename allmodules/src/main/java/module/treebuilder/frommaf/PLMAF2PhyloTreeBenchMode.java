@@ -29,7 +29,7 @@ import module.remnant.treeoperator.reconAlgo.TreeReconMethod;
 import egps2.frame.MainFrameProperties;
 import module.evoldist.operator.pairdist.EvoDistParamter;
 import module.evoldist.operator.pairdist.EvoPairwiseDistMethod;
-import module.evolview.gfamily.work.model.tree.GraphicsNode;
+import module.evolview.model.tree.GraphicsNode;
 import module.evolview.moderntreeviewer.IndependentModuleLoader;
 import module.evoltrepipline.ParameterAssigner;
 

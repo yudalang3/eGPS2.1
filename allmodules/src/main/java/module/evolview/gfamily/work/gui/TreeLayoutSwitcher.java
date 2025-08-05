@@ -10,7 +10,7 @@ import javax.swing.border.Border;
 
 import egps2.builtin.modules.IconObtainer;
 import module.evolview.gfamily.work.gui.browser.BaseCtrlPanel;
-import module.evolview.gfamily.work.model.enums.TreeLayoutEnum;
+import module.evolview.model.enums.TreeLayoutEnum;
 
 
 /**

@@ -32,8 +32,8 @@ import module.evolview.gfamily.work.gui.ControlPanelContainner;
 import module.evolview.gfamily.work.gui.browser.BrowserPanel;
 import module.evolview.gfamily.work.gui.tree.PhylogeneticTreePanel;
 import module.evolview.gfamily.work.io.Voice4geneFamilyBrowser;
-import module.evolview.gfamily.work.model.tree.GraphicsNode;
-import module.evolview.gfamily.work.model.tree.TreeLayoutProperties;
+import module.evolview.model.tree.GraphicsNode;
+import module.evolview.model.tree.TreeLayoutProperties;
 import egps2.modulei.IInformation;
 import egps2.modulei.IModuleLoader;
 

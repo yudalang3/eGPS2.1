@@ -3,7 +3,7 @@ package module.evolview.gfamily.work.gui.tree.annotation;
 import java.awt.Color;
 import java.util.List;
 
-import module.evolview.gfamily.work.model.tree.GraphicsNode;
+import module.evolview.model.tree.GraphicsNode;
 
 public class DrawPropInternalNode2LeafAnno4LinageType extends DrawPropInternalNode2LeafAnno {
 

@@ -5,9 +5,9 @@ import java.awt.geom.CubicCurve2D;
 import java.util.List;
 
 import module.evolview.gfamily.work.gui.tree.PhylogeneticTreePanel;
-import module.evolview.gfamily.work.model.tree.GraphicsNode;
+import module.evolview.model.tree.GraphicsNode;
 import module.evolview.phylotree.visualization.graphics.struct.RectangularLayoutProperty;
-import module.evolview.gfamily.work.model.tree.TreeLayoutProperties;
+import module.evolview.model.tree.TreeLayoutProperties;
 
 public abstract class RectangularLayout extends BaseLayout {
 

@@ -3,7 +3,7 @@ package module.evolview.gfamily.work.gui.render;
 import java.util.ArrayList;
 import java.util.List;
 
-import module.evolview.gfamily.work.model.enums.ColorScheme;
+import module.evolview.model.enums.ColorScheme;
 
 public class CustomizedSaveBean {
 	

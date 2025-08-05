@@ -1,6 +1,6 @@
 package module.evolview.treebarplot.io;
 
-import module.evolview.gfamily.work.model.tree.TreeLayoutProperties;
+import module.evolview.model.tree.TreeLayoutProperties;
 import module.evolview.moderntreeviewer.io.TreePropertiesAssigner;
 
 public class TreeBarplotProAssigner extends TreePropertiesAssigner {

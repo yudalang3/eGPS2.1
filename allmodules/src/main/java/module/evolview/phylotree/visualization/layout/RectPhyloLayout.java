@@ -20,11 +20,11 @@ import module.evolview.gfamily.work.gui.tree.annotation.DrawPropInternalNodeInsi
 import module.evolview.gfamily.work.gui.tree.annotation.DrawPropOutterSidewardAnno;
 import module.evolview.gfamily.work.gui.tree.annotation.OutterSidewardLocation;
 import module.evolview.phylotree.visualization.graphics.struct.NodeType;
-import module.evolview.gfamily.work.model.tree.AnnotationsProperties;
-import module.evolview.gfamily.work.model.tree.AnnotationsProperties4LinageType;
-import module.evolview.gfamily.work.model.tree.GraphicsNode;
+import module.evolview.model.tree.AnnotationsProperties;
+import module.evolview.model.tree.AnnotationsProperties4LinageType;
+import module.evolview.model.tree.GraphicsNode;
 import module.evolview.phylotree.visualization.graphics.struct.ShowLeafPropertiesInfo;
-import module.evolview.gfamily.work.model.tree.TreeLayoutProperties;
+import module.evolview.model.tree.TreeLayoutProperties;
 import module.evolview.phylotree.visualization.graphics.struct.util.GraphicTreePropertyCalculator;
 import module.evolview.phylotree.visualization.graphics.struct.util.GraphicTreePropertyCalculator.LongestRoot2leafBean;
 import module.evolview.phylotree.visualization.graphics.struct.TreeDecideUtil;

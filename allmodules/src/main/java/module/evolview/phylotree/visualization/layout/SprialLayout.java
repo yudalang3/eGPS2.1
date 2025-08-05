@@ -5,10 +5,10 @@ import java.awt.geom.GeneralPath;
 import java.awt.geom.Point2D.Double;
 
 import module.evolview.gfamily.work.gui.tree.PhylogeneticTreePanel;
-import module.evolview.gfamily.work.model.tree.GraphicsNode;
+import module.evolview.model.tree.GraphicsNode;
 import module.evolview.phylotree.visualization.graphics.struct.SprialLayoutProperty;
 import evoltree.txtdisplay.TreeDrawUnit;
-import module.evolview.gfamily.work.model.tree.TreeLayoutProperties;
+import module.evolview.model.tree.TreeLayoutProperties;
 import module.evolview.phylotree.visualization.graphics.struct.util.GraphicTreePropertyCalculator;
 import graphic.engine.guicalculator.GuiCalculator;
 

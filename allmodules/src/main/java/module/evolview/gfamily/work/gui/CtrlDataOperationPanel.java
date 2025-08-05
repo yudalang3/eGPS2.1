@@ -23,7 +23,7 @@ import egps2.UnifiedAccessPoint;
 import egps2.builtin.modules.IconObtainer;
 import module.evolview.gfamily.work.gui.browser.BaseCtrlPanel;
 import module.evolview.gfamily.work.gui.colorscheme.DialogFrame;
-import module.evolview.gfamily.work.model.tree.GraphicsNode;
+import module.evolview.model.tree.GraphicsNode;
 
 /**
  * @ClassName LeftDataFilterPanel

@@ -26,7 +26,7 @@ import module.evolview.gfamily.work.calculator.browser.LocationCalculator;
 import module.evolview.gfamily.work.gui.browser.draw.AlignmentWithDerivedStatistics;
 import module.evolview.gfamily.work.gui.browser.draw.DrawingPropertyPrimerSet;
 import module.evolview.gfamily.work.gui.browser.draw.GeneStructureInfo;
-import module.evolview.gfamily.work.model.AlignmentGetSequence;
+import module.evolview.model.AlignmentGetSequence;
 
 /**
  * Copyright (c) 2019 Chinese Academy of Sciences. All rights reserved.

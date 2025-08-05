@@ -22,8 +22,8 @@ import javax.swing.tree.DefaultMutableTreeNode;
 
 import egps2.UnifiedAccessPoint;
 import module.evolview.gfamily.work.gui.tree.PhylogeneticTreePanel;
-import module.evolview.gfamily.work.model.tree.AnnotationsProperties;
-import module.evolview.gfamily.work.model.tree.GraphicsNode;
+import module.evolview.model.tree.AnnotationsProperties;
+import module.evolview.model.tree.GraphicsNode;
 
 /**
  *

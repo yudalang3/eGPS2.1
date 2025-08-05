@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import module.remnant.treeoperator.util.GenealogyAnalyzer;
-import module.evolview.gfamily.work.model.tree.GraphicsNode;
+import module.evolview.model.tree.GraphicsNode;
 
 /**
  *

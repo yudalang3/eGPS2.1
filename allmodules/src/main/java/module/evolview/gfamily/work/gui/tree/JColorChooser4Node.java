@@ -10,7 +10,7 @@ import module.evolview.gfamily.GeneFamilyController;
 import module.evolview.gfamily.work.gui.colorscheme.BaseContentPanel;
 import module.evolview.gfamily.work.gui.render.CustomizedRenderRecord;
 import module.evolview.gfamily.work.gui.render.CustomizedSaveBean;
-import module.evolview.gfamily.work.model.tree.GraphicsNode;
+import module.evolview.model.tree.GraphicsNode;
 import graphic.engine.colors.EGPSColors;
 
 /**

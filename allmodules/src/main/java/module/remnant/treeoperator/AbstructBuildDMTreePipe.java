@@ -13,7 +13,7 @@ import java.util.Map;
 import module.remnant.treeoperator.dmMethod.BuilderBootstrapTree4MSA;
 import module.remnant.treeoperator.dmMethod.BuilderSinglePhyloTree;
 import module.evoldist.operator.AbstructCalculateGDistsPipe;
-import module.evolview.gfamily.work.model.tree.GraphicsNode;
+import module.evolview.model.tree.GraphicsNode;
 import module.evoltrepipline.ParameterAssigner;
 
 /**

@@ -11,8 +11,8 @@ import java.util.Set;
 
 import module.evolview.gfamily.GeneFamilyController;
 import module.evolview.gfamily.work.gui.tree.TreeOperationUtil;
-import module.evolview.gfamily.work.model.enums.ColorScheme;
-import module.evolview.gfamily.work.model.tree.GraphicsNode;
+import module.evolview.model.enums.ColorScheme;
+import module.evolview.model.tree.GraphicsNode;
 import module.evolview.phylotree.visualization.graphics.struct.util.GraphicTreePropertyCalculator;
 import graphic.engine.colors.EGPSColors;
 

@@ -14,7 +14,7 @@ import module.evolview.gfamily.work.beans.TrackMultipleDomainBean;
 import module.evolview.gfamily.work.gui.browser.draw.DrawingPropertyElement;
 import module.evolview.gfamily.work.gui.browser.draw.DrawingPropertySequenceModel;
 import module.evolview.gfamily.work.gui.browser.draw.GeneStructureInfo;
-import module.evolview.gfamily.work.model.AlignmentGetSequence;
+import module.evolview.model.AlignmentGetSequence;
 import module.gff3opr.model.FeatureList;
 import module.gff3opr.model.GFF3Feature;
 import module.gff3opr.model.YuGFF3Parser;

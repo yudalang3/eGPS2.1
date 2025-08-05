@@ -1,4 +1,4 @@
-package module.evolview.gfamily.work.model.enums;
+package module.evolview.model.enums;
 
 public enum BranchLengthType {
 	

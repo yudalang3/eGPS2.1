@@ -1,19 +1,19 @@
-package module.evolview.gfamily.work.model.tree;
+package module.evolview.model.tree;
 
 import java.util.Objects;
 
 import module.evolview.phylotree.visualization.graphics.phylogeny.DefaultGraphicsPhyloNode;
 
 
-public class Node4BasicNCov19 extends DefaultGraphicsPhyloNode {
+public class NodeWithCGBID extends DefaultGraphicsPhyloNode {
 
 	private final CGBID cgbid = new CGBID();
 
-	public Node4BasicNCov19() {
+	public NodeWithCGBID() {
 
 	}
 
-	public Node4BasicNCov19(String string) {
+	public NodeWithCGBID(String string) {
 		this.name = string;
 	}
 
@@ -69,7 +69,7 @@ public class Node4BasicNCov19 extends DefaultGraphicsPhyloNode {
 		if (getClass() != obj.getClass()) {
 			return false;
 		}
-		Node4BasicNCov19 other = (Node4BasicNCov19) obj;
+		NodeWithCGBID other = (NodeWithCGBID) obj;
 		return getCgbIDFirst() == other.getCgbIDFirst() && getCgbIDLast() == other.getCgbIDLast();
 	}
 

@@ -3,7 +3,7 @@ package module.evolview.gfamily.work.gui;
 import java.awt.Cursor;
 
 import module.evolview.gfamily.work.gui.tree.RectObj;
-import module.evolview.gfamily.work.model.tree.ScaleBarProperty;
+import module.evolview.model.tree.ScaleBarProperty;
 
 public class ScaleBarRectObject extends RectObj{
 	

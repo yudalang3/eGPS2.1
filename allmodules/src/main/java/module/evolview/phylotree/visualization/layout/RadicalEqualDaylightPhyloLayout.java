@@ -7,8 +7,8 @@ import evoltree.struct.util.EvolNodeUtil;
 import module.evolview.gfamily.work.gui.DrawUtil;
 import module.evolview.gfamily.work.gui.tree.PhylogeneticTreePanel;
 import module.evolview.phylotree.visualization.graphics.struct.NodeType;
-import module.evolview.gfamily.work.model.tree.GraphicsNode;
-import module.evolview.gfamily.work.model.tree.TreeLayoutProperties;
+import module.evolview.model.tree.GraphicsNode;
+import module.evolview.model.tree.TreeLayoutProperties;
 
 public class RadicalEqualDaylightPhyloLayout extends RadialPhyloLayout {
 

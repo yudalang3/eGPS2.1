@@ -24,8 +24,8 @@ import com.google.common.collect.Lists;
 import egps2.UnifiedAccessPoint;
 import evoltree.struct.util.EvolNodeUtil;
 import module.evolview.gfamily.GeneFamilyController;
-import module.evolview.gfamily.work.model.tree.GraphicsNode;
-import module.evolview.gfamily.work.model.tree.TreeLayoutProperties;
+import module.evolview.model.tree.GraphicsNode;
+import module.evolview.model.tree.TreeLayoutProperties;
 
 public class SearchDialogContent extends JPanel implements ActionListener {
 

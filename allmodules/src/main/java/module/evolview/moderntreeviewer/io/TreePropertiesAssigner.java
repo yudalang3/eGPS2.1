@@ -17,10 +17,10 @@ import tsv.io.TSVReader;
 import egps2.UnifiedAccessPoint;
 import egps2.frame.MyFrame;
 import evoltree.struct.util.EvolNodeUtil;
-import module.evolview.gfamily.work.model.tree.GraphicsNode;
+import module.evolview.model.tree.GraphicsNode;
 import module.evolview.phylotree.visualization.graphics.struct.ShowLeafPropertiesInfo;
 import evoltree.txtdisplay.TreeDrawUnit;
-import module.evolview.gfamily.work.model.tree.TreeLayoutProperties;
+import module.evolview.model.tree.TreeLayoutProperties;
 import graphic.engine.colors.EGPSColors;
 
 public class TreePropertiesAssigner {

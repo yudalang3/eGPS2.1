@@ -12,7 +12,7 @@ import java.util.List;
 import module.evolview.gfamily.work.gui.browser.draw.DrawingPropertyPrimerSet;
 import module.evolview.gfamily.work.gui.browser.draw.DrawingPropertyPrimers;
 import module.evolview.gfamily.work.gui.browser.draw.DrawingPropertyPrimersNucleotide;
-import module.evolview.gfamily.work.model.AlignmentGetSequence;
+import module.evolview.model.AlignmentGetSequence;
 
 /**
  * 绘制ElementStructure信息,可能会有多行

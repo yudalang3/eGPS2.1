@@ -12,7 +12,7 @@ import java.util.function.Supplier;
 import evoltree.struct.util.EvolNodeUtil;
 import evoltree.struct.EvolNode;
 import module.evolview.phylotree.visualization.graphics.struct.NodeType;
-import module.evolview.gfamily.work.model.tree.GraphicsNode;
+import module.evolview.model.tree.GraphicsNode;
 import module.evolview.phylotree.visualization.graphics.struct.TreeDecideUtil;
 
 public class TreeOperationUtil {

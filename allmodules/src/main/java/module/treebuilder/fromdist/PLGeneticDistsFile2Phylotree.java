@@ -17,7 +17,7 @@ import module.remnant.treeoperator.AbstructBuildDMTreePipe;
 import module.remnant.treeoperator.NodeEGPSv1;
 import module.remnant.treeoperator.dmMethod.BuilderSinglePhyloTree;
 import egps2.frame.MainFrameProperties;
-import module.evolview.gfamily.work.model.tree.GraphicsNode;
+import module.evolview.model.tree.GraphicsNode;
 import module.evolview.moderntreeviewer.IndependentModuleLoader;
 import module.evoltrepipline.ParameterAssigner;
 import module.webmsaoperator.webIO.DistMatrixTextInput;

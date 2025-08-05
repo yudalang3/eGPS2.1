@@ -6,7 +6,7 @@ import java.util.Optional;
 import evoltree.phylogeny.DefaultPhyNode;
 import module.evoltreio.TreeParser4Evoltree;
 import module.evolview.gfamily.work.NodeUtils;
-import module.evolview.gfamily.work.model.tree.GraphicsNode;
+import module.evolview.model.tree.GraphicsNode;
 import graphic.engine.guicalculator.BlankArea;
 
 public class TreeParser4MTV extends TreeParser4Evoltree {

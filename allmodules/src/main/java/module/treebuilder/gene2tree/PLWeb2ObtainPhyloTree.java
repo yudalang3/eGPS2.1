@@ -9,7 +9,7 @@ import module.remnant.treeoperator.dmMethod.BuilderBootstrapTree4MSA;
 import module.remnant.treeoperator.dmMethod.BuilderSinglePhyloTree;
 import egps2.frame.MainFrameProperties;
 import module.evoltrepipline.ConstantNameClass_EvolutionaryDistance;
-import module.evolview.gfamily.work.model.tree.GraphicsNode;
+import module.evolview.model.tree.GraphicsNode;
 import module.evolview.moderntreeviewer.IndependentModuleLoader;
 import module.evoltrepipline.ParameterAssigner;
 import module.multiseq.gene2msa.PLWeb2ObtainAlignment;

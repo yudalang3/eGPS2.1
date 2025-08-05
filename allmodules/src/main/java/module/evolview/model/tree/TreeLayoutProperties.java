@@ -1,4 +1,4 @@
-package module.evolview.gfamily.work.model.tree;
+package module.evolview.model.tree;
 
 import egps2.UnifiedAccessPoint;
 import evoltree.struct.util.EvolNodeUtil;

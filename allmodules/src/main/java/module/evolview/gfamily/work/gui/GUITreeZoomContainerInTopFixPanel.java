@@ -16,7 +16,7 @@ import egps2.frame.gui.comp.toggle.toggle.ToggleAdapter;
 import egps2.frame.gui.comp.toggle.toggle.ToggleButton;
 import module.evolview.gfamily.work.gui.browser.BaseCtrlPanel;
 import module.evolview.gfamily.work.gui.tree.control.Turn2ThisLayoutPanel;
-import module.evolview.gfamily.work.model.enums.TreeLayoutEnum;
+import module.evolview.model.enums.TreeLayoutEnum;
 
 @SuppressWarnings("serial")
 public class GUITreeZoomContainerInTopFixPanel extends BaseCtrlPanel implements Turn2ThisLayoutPanel {

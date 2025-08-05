@@ -16,9 +16,9 @@ import evoltree.struct.util.EvolNodeUtil;
 import module.evoltre.mutation.IMutation4Rec;
 import evoltree.struct.ArrayBasedNode;
 import evoltree.struct.EvolNode;
-import module.evolview.gfamily.work.model.tree.CGBID;
-import module.evolview.gfamily.work.model.tree.GraphicsNode;
-import module.evolview.gfamily.work.model.tree.Node4BasicNCov19;
+import module.evolview.model.tree.CGBID;
+import module.evolview.model.tree.GraphicsNode;
+import module.evolview.model.tree.NodeWithCGBID;
 
 /**
  * 放置一些树操作的快捷方法。
@@ -549,20 +549,20 @@ public class CGBNodeUtil {
 
 	public static Optional<GraphicsNode> pickOneNode(GraphicsNode root, String targetCGBID) {
 
-		Optional<Node4BasicNCov19> ret = pickOneNode((Node4BasicNCov19) root, targetCGBID);
+		Optional<NodeWithCGBID> ret = pickOneNode((NodeWithCGBID) root, targetCGBID);
 
 		return Optional.ofNullable((GraphicsNode) ret.get());
 	}
 
-	public static Optional<Node4BasicNCov19> pickOneNode(Node4BasicNCov19 root, String targetCGBID) {
+	public static Optional<NodeWithCGBID> pickOneNode(NodeWithCGBID root, String targetCGBID) {
 		Pair<Integer, Integer> splitCGBIDString = splitCGBIDString(targetCGBID);
 		final int first = splitCGBIDString.getLeft();
 		final int second = splitCGBIDString.getRight();
-		MutableObject<Node4BasicNCov19> ret = new MutableObject<>();
+		MutableObject<NodeWithCGBID> ret = new MutableObject<>();
 
 		EvolNodeUtil.searchNodeWithReturn(root, node -> {
 
-			Node4BasicNCov19 temp = (Node4BasicNCov19) node;
+			NodeWithCGBID temp = (NodeWithCGBID) node;
 			if (cgbIDequals(first, second, node)) {
 
 				ret.setValue(temp);
@@ -575,8 +575,8 @@ public class CGBNodeUtil {
 		return Optional.ofNullable(ret.getValue());
 	}
 
-	public static Optional<Node4BasicNCov19> pickOneNodeAccording2AccOrCGB(Node4BasicNCov19 root, String targetCGBID) {
-		MutableObject<Node4BasicNCov19> ret = new MutableObject<>();
+	public static Optional<NodeWithCGBID> pickOneNodeAccording2AccOrCGB(NodeWithCGBID root, String targetCGBID) {
+		MutableObject<NodeWithCGBID> ret = new MutableObject<>();
 		EvolNodeUtil.searchNodeWithReturn(root, node -> {
 
 			if (targetCGBID.equals(node.getName())) {
@@ -630,8 +630,8 @@ public class CGBNodeUtil {
 	 * @return void
 	 */
 
-	private static List<IMutation4Rec> inferMutationsForBinaryForkRemoveOneNode(Node4BasicNCov19 parent,
-			List<IMutation4Rec> mutOfParent, List<IMutation4Rec> mutsOfSister) throws ParseException {
+	private static List<IMutation4Rec> inferMutationsForBinaryForkRemoveOneNode(NodeWithCGBID parent,
+                                                                                List<IMutation4Rec> mutOfParent, List<IMutation4Rec> mutsOfSister) throws ParseException {
 
 //		List<StateAfterMutation> fromStates = null;
 //		WholeGenomeRecover0304 wholeGenomeRecover2 = getWholeGenomeRecover();
@@ -662,8 +662,8 @@ public class CGBNodeUtil {
 		return null;
 	}
 
-	public static GraphicsNode convertBasicNode2graphicsNode(Node4BasicNCov19 node) {
-		Function<Node4BasicNCov19, GraphicsNode> generateNewRoot = root -> {
+	public static GraphicsNode convertBasicNode2graphicsNode(NodeWithCGBID node) {
+		Function<NodeWithCGBID, GraphicsNode> generateNewRoot = root -> {
 			GraphicsNode newroot = new GraphicsNode();
 			newroot.setID(root.getID());
 
@@ -721,7 +721,7 @@ public class CGBNodeUtil {
 	 * @param node
 	 * @return
 	 */
-	public static boolean cgbIDequals(int firstID, int nextID, Node4BasicNCov19 node) {
+	public static boolean cgbIDequals(int firstID, int nextID, NodeWithCGBID node) {
 		if (node == null) {
 			return false;
 		}
@@ -733,7 +733,7 @@ public class CGBNodeUtil {
 		return false;
 	}
 
-	public static boolean cgbIDequals(Node4BasicNCov19 node1, Node4BasicNCov19 node2) {
+	public static boolean cgbIDequals(NodeWithCGBID node1, NodeWithCGBID node2) {
 		Objects.requireNonNull(node1);
 		Objects.requireNonNull(node2);
 		if (node1.getCgbIDFirst() == node2.getCgbIDFirst() && node1.getCgbIDLast() == node2.getCgbIDLast()) {
