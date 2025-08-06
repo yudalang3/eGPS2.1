@@ -294,6 +294,10 @@ public class MTreeViewMainFace extends ModuleFace implements AdjusterFillAndLine
 		importHandler.doUserImportAction();
 	}
 
+	public VOICM4MTV getImportHandler() {
+		return importHandler;
+	}
+
 	@Override
 	public boolean canExport() {
 		return true;

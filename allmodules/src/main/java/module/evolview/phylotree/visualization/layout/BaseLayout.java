@@ -820,6 +820,9 @@ public abstract class BaseLayout implements ITreeLayout {
             DecimalFormat df = new DecimalFormat(",###,###");
 
             String titleString = treeLayoutProperties.getTitleString();
+            if (titleString == null){
+                return;
+            }
             String drawString = MessageFormat.format(titleString, df.format(numOfLeavesWithoutOutgroup));
 
             FontMetrics fontMetrics = g2d.getFontMetrics();
