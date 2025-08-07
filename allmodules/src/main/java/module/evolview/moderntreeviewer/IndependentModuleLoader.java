@@ -17,6 +17,7 @@ public class IndependentModuleLoader implements IModuleLoader {
 	String howModuleLaunched = "Module launched by directly click the open button";
 	String whatDataInvoked = "";
 
+	String waitingTextMsg = "Please click the import button in the toolbar to load data";
 	
 	@Override
 	public String getTabName() {
@@ -63,5 +64,9 @@ public class IndependentModuleLoader implements IModuleLoader {
 	public void setHowModuleLaunchedWithData(String howModuleLaunched, String whatDataInvoked) {
 		this.howModuleLaunched = howModuleLaunched;
 		this.whatDataInvoked = whatDataInvoked;
+	}
+
+	public void setWaitingText2loading(){
+		waitingTextMsg = "Waiting for eGPS to loading the tree...";
 	}
 }

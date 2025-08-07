@@ -28,6 +28,7 @@ public class ModernTreeViewPyLauncher {
 
         UnifiedAccessPoint.registerActionAfterMainFrame(() -> {
             IndependentModuleLoader loader = new IndependentModuleLoader();
+            loader.setWaitingText2loading();
             MTreeViewMainFace moduleFace = (MTreeViewMainFace) MainFrameProperties.loadTheModuleFromIModuleLoader(loader);
             VOICM4MTV importHandler = moduleFace.getImportHandler();
             try {

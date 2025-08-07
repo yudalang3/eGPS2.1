@@ -336,6 +336,8 @@ public class MTreeViewMainFace extends ModuleFace implements AdjusterFillAndLine
 		IndependentModuleLoader moduleLoader2 = (IndependentModuleLoader) moduleLoaderOpt.get();
 		GraphicsNode rootNode = moduleLoader2.rootNode;
 		if (rootNode == null) {
+
+			String waitingTextMsg = moduleLoader2.waitingTextMsg;
 			// 添加上用户引导性语句
 			JPanel jPanel = new JPanel() {
 				@Override
@@ -343,7 +345,7 @@ public class MTreeViewMainFace extends ModuleFace implements AdjusterFillAndLine
 					super.paintComponent(g);
 					Graphics2D g2d = (Graphics2D) g;
 					EGPSMainGuiUtil.setupHighQualityRendering(g2d);
-					EGPSMainGuiUtil.drawLetUserImportDataString(g2d);
+					EGPSMainGuiUtil.drawStringAtCenter(g2d,waitingTextMsg);
 				}
 			};
 			this.scrollPane.setViewportView(jPanel);
